@@ -14,10 +14,10 @@ body {
   margin: 0;
 }
 
-/* .darkmode-background,
+.darkmode-background,
 .darkmode-layer {
   margin: 0;
-} */
+}
 
 ::selection {
   background: #fff744; /* WebKit/Blink Browsers */
