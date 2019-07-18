@@ -1,16 +1,5 @@
-.Homepage {
-  margin: 0;
-  padding: 0;
-}
-
 main {
   margin-top: 6rem;
-}
-
-.section {
-  max-width: 800px;
-  min-width: 400px;
-  margin: auto;
 }
 
 h1 {
@@ -25,4 +14,15 @@ p {
   width: 580px;
   text-align: left;
   margin: 1.5rem 0;
+}
+
+.Homepage {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
 }

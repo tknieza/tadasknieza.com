@@ -7,22 +7,12 @@ import { Footer } from "../components/Footer";
 import "./Homepage.css";
 
 function Homepage() {
-  var options = {
-    mixColor: "#eee", // default: '#fff'
-    backgroundColor: "#fff", // default: '#fff'
-    saveInCookies: true, // default: true,
-    autoMatchOsTheme: true // default: true
-  };
-  const darkmode = new Darkmode(options);
-
+  const darkmode = new Darkmode({ mixColor: "#fff", backgroundColor: "#fff" });
+  const toggleDarkmode = () => darkmode.toggle();
   return (
     <div className="Homepage">
       <ReactTooltip />
-      <Navigation
-        darkmode={() => {
-          darkmode.toggle();
-        }}
-      />
+      <Navigation darkmode={toggleDarkmode} />
       <main>
         <div className="section">
           <h1>Hi, I'm Tadas</h1>
