@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
-import "./Social.css";
 import GitHubButton from "react-github-btn";
+import "./Social.css";
 
-class Social extends PureComponent {
+export class Social extends PureComponent {
   componentDidMount() {
     const script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
@@ -35,4 +35,3 @@ class Social extends PureComponent {
     );
   }
 }
-export default Social;

@@ -7,7 +7,7 @@ import { u1F468 } from "react-icons-kit/noto_emoji_regular/u1F468";
 import { u1F31D } from "react-icons-kit/noto_emoji_regular/u1F31D";
 import "./Navigation.css";
 
-function Navigation(props) {
+export const Navigation = props => {
   return (
     <header>
       <nav>
@@ -37,5 +37,4 @@ function Navigation(props) {
       </nav>
     </header>
   );
-}
-export default Navigation;
+};

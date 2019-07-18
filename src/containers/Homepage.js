@@ -1,9 +1,9 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import Darkmode from "darkmode-js";
-import Navigation from "../components/Navigation";
-import Social from "../components/Social";
-
+import { Navigation } from "../components/Navigation";
+import { Social } from "../components/Social";
+import { Footer } from "../components/Footer";
 import "./Homepage.css";
 
 function Homepage() {
@@ -37,11 +37,7 @@ function Homepage() {
         <div />
       </main>
 
-      <footer>
-        {/* <a href="#" />
-        <a href="#" />
-        <a href="#" /> */}
-      </footer>
+      <Footer />
     </div>
   );
 }
