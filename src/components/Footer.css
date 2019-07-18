@@ -6,6 +6,7 @@ a {
   color: rgba(0, 0, 0, 0.4);
   text-decoration: none;
   margin-right: 0.8rem;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
