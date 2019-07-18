@@ -23,7 +23,25 @@ function Homepage() {
           </p>
           <Social />
         </div>
-        <div />
+        <div className="section">
+          <h2>Other People's Opinions</h2>
+          <div className="grid">
+            <div>
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur."
+              </p>
+              <h3>- Jenny</h3>
+            </div>
+            <div>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              </p>
+              <h3>- Craig</h3>
+            </div>
+          </div>
+        </div>
         <div />
       </main>
 

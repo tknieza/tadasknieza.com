@@ -9,6 +9,7 @@ export const Footer = () => {
         <a href="https://twitter.com/tadasknieza">Twitter</a>
         <a href="https://www.linkedin.com/in/tadas-knieza/">LinkedIn</a>
         <a href="mailto:tadasknieza@gmail.com">Email</a>
+        <a href="https://github.com/ordoven/tadasknieza.com">View source</a>
       </div>
     </footer>
   );
