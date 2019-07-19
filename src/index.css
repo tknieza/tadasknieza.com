@@ -8,6 +8,8 @@ body {
 
 #root {
   margin: 0;
+  background: url("./Group.png") no-repeat center center;
+  background-size: cover;
 }
 
 .darkmode-background,
