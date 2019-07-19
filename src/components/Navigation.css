@@ -24,9 +24,9 @@ header {
 }
 
 .title > * {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  /* font-weight: 500; */
+  /* color: rgba(0, 0, 0, 0.8); */
 }
 
 .links {
@@ -92,6 +92,10 @@ button:hover {
     margin: 1rem 0;
   }
 
+  br {
+    display: none;
+  }
+
   .links {
     width: 100%;
     margin: 1rem 0;
@@ -103,5 +107,9 @@ button:hover {
 
   .title {
     margin-bottom: 0;
+  }
+
+  .title span {
+    margin-left: 0.5rem;
   }
 }

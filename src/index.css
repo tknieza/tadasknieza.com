@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,900&display=swap");
-
 body {
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
-  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

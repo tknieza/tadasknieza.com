@@ -6,7 +6,7 @@ import { Social } from "../components/Social";
 import { Footer } from "../components/Footer";
 import "./Homepage.css";
 
-function Homepage() {
+export const Homepage = () => {
   const darkmode = new Darkmode({ mixColor: "#fff", backgroundColor: "#fff" });
   const toggleDarkmode = () => darkmode.toggle();
   return (
@@ -44,10 +44,7 @@ function Homepage() {
         </div>
         <div />
       </main>
-
       <Footer />
     </div>
   );
-}
-
-export default Homepage;
+};

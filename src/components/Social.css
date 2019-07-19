@@ -5,3 +5,7 @@
 .social * {
   margin-right: 0.2rem;
 }
+
+iframe {
+  margin-bottom: 0;
+}
