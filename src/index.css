@@ -24,3 +24,10 @@ body {
 ::-moz-selection {
   background: #fff744; /* Gecko Browsers */
 }
+
+@media only screen and (min-width: 800px) {
+  #root {
+    background: url("./bg.svg") no-repeat center center;
+    background-size: cover;
+  }
+}
