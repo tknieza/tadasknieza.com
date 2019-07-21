@@ -4,6 +4,7 @@ import Darkmode from "darkmode-js";
 import { Navigation } from "../components/Navigation";
 import { Social } from "../components/Social";
 import { Footer } from "../components/Footer";
+import { Waypoint } from "react-waypoint";
 import "./Homepage.css";
 
 export const Homepage = () => {
@@ -11,18 +12,42 @@ export const Homepage = () => {
   const toggleDarkmode = () => darkmode.toggle();
   return (
     <div className="Homepage">
-      <div className="bg" />
       <ReactTooltip />
       <Navigation darkmode={toggleDarkmode} />
       <main>
         <div className="section">
-          <h1>Hi, I'm Tadas</h1>
+          <Waypoint
+            onEnter={() => {
+              // document
+              //   .getElementsByTagName("header")
+              //   .item(0)
+              //   .classList.remove("scroll");
+              console.log("Enter.");
+            }}
+            onLeave={() => {
+              // document
+              //   .getElementsByTagName("header")
+              //   .item(0)
+              //   .classList.add("scroll");
+              console.log("Leave.");
+            }}
+          >
+            <h1>Hi, I'm Tadas</h1>
+          </Waypoint>
           <p>
             I'm an aspiring software developer specializing in modern
             JavaScript. I make things from scratch, contribute to open source,
             and develop accessible Web applications.
           </p>
           <Social />
+        </div>
+        <div className="section">
+          <h2>Personal Projects</h2>
+          <div />
+        </div>
+        <div className="section">
+          <h2>Contribution To Open Source</h2>
+          <div />
         </div>
         <div className="section">
           <h2>Other People's Opinions</h2>
@@ -43,7 +68,6 @@ export const Homepage = () => {
             </div>
           </div>
         </div>
-        <div />
       </main>
       <Footer />
     </div>
