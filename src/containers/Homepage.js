@@ -11,6 +11,7 @@ export const Homepage = () => {
   const toggleDarkmode = () => darkmode.toggle();
   return (
     <div className="Homepage">
+      <div className="bg" />
       <ReactTooltip />
       <Navigation darkmode={toggleDarkmode} />
       <main>

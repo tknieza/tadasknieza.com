@@ -4,11 +4,12 @@ body {
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 #root {
   margin: 0;
-  background: url("./Group.png") no-repeat center center;
+  background: url("./bg.svg") no-repeat center center;
   background-size: cover;
 }
 

@@ -26,9 +26,8 @@ header {
 }
 
 .title > * {
-  font-size: 1.4rem;
-  /* font-weight: 500; */
-  /* color: rgba(0, 0, 0, 0.8); */
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .links {
@@ -40,7 +39,7 @@ header {
 .links > * {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  /* color: rgba(0, 0, 0, 0.4); */
+  color: rgba(0, 0, 0, 0.4);
   text-align: center;
   width: 50%;
   margin: 0.7rem;
@@ -53,9 +52,6 @@ header {
 button {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  color: rgba(255, 255, 255, 0.8);
-  /* color: white; */
-
   border: none;
   background: none;
 }
@@ -65,9 +61,7 @@ button:focus {
 
 a:hover,
 button:hover {
-  color: rgba(255, 255, 255, 1);
-
-  /* color: rgba(0, 0, 0, 0.75); */
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .heart:hover {
