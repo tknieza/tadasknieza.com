@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "react-icons-kit";
-import { u1F306 } from "react-icons-kit/noto_emoji_regular/u1F306";
+import { u1F307 } from "react-icons-kit/noto_emoji_regular/u1F307"; // day
+import { u1F303 } from "react-icons-kit/noto_emoji_regular/u1F303"; // night
 import { u1F4EC } from "react-icons-kit/noto_emoji_regular/u1F4EC";
 import { u1F4DA } from "react-icons-kit/noto_emoji_regular/u1F4DA";
 import { u1F468 } from "react-icons-kit/noto_emoji_regular/u1F468";
@@ -12,7 +13,14 @@ export const Navigation = props => {
     <header>
       <nav>
         <div className="title">
-          <Icon size={34} icon={u1F306} />
+          <Icon
+            size={34}
+            icon={
+              props.currentTime >= 17 || props.currentTime <= 6
+                ? u1F303
+                : u1F307
+            }
+          />
           <br />
           <span>Tadas Knieža</span>
         </div>
