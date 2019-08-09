@@ -18,16 +18,33 @@ export const Navigation = ({ time, darkmode }) => {
           <span>Tadas Knieža</span>
         </div>
         <div className="links">
-          <button data-tip="About Me" className="darkmode">
+          <button
+            aria-label="About Me"
+            data-tip="About Me"
+            className="darkmode"
+          >
             <Icon size={42} icon={u1F468} />
           </button>
-          <button data-tip="Articles" className="darkmode">
+          <button
+            aria-label="Articles"
+            data-tip="Articles"
+            className="darkmode"
+          >
             <Icon size={42} icon={u1F4DA} />
           </button>
-          <button data-tip="Join Newsletter" className="darkmode">
+          <button
+            aria-label="Join Newsletter"
+            data-tip="Join Newsletter"
+            className="darkmode"
+          >
             <Icon size={42} icon={u1F4EC} />
           </button>
-          <button onClick={darkmode} data-tip="Dark Mode" className="darkmode">
+          <button
+            onClick={darkmode}
+            aria-label="Dark Mode"
+            data-tip="Dark Mode"
+            className="darkmode"
+          >
             {<Icon size={42} icon={u1F31D} />}
           </button>
         </div>
