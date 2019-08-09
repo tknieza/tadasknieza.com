@@ -1,13 +1,20 @@
-import React, { PureComponent } from "react";
-import ReactTooltip from "react-tooltip";
-import Darkmode from "darkmode-js";
-import { Navigation } from "../components/Navigation";
-import { Social } from "../components/Social";
-import { Footer } from "../components/Footer";
-import { Waypoint } from "react-waypoint";
-import "./Homepage.css";
+import React from "react";
 
-export class Homepage extends PureComponent {
+import ReactTooltip from "react-tooltip";
+
+import Darkmode from "darkmode-js";
+
+import { Navigation } from "./components/navigation/navigation.component";
+
+import { Social } from "./components/social/social.component";
+
+import { Footer } from "./components/footer/footer.component";
+
+import { Waypoint } from "react-waypoint";
+
+import "./app.css";
+
+export class App extends React.Component {
   constructor() {
     super();
     this.state = {

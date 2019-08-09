@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Homepage } from "./containers/Homepage";
+import { App } from "./app";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Typography from "typography";
@@ -10,5 +10,5 @@ githubTheme.baseFontSize = "18px";
 const typography = new Typography(githubTheme);
 typography.injectStyles();
 
-ReactDOM.render(<Homepage />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 serviceWorker.register();

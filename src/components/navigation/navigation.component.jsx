@@ -6,7 +6,7 @@ import { u1F4EC } from "react-icons-kit/noto_emoji_regular/u1F4EC";
 import { u1F4DA } from "react-icons-kit/noto_emoji_regular/u1F4DA";
 import { u1F468 } from "react-icons-kit/noto_emoji_regular/u1F468";
 import { u1F31D } from "react-icons-kit/noto_emoji_regular/u1F31D";
-import "./Navigation.css";
+import "./navigation.styles.scss";
 
 export const Navigation = props => {
   return (

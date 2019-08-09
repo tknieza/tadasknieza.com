@@ -9,7 +9,7 @@ body {
 
 #root {
   margin: 0;
-  background: url("./bg.svg") no-repeat center center;
+  background: url("./assets/bg.svg") no-repeat center center;
   background-size: cover;
 }
 
@@ -27,7 +27,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   #root {
-    background: url("./bg.svg") no-repeat center center;
+    background: url("./assets/bg.svg") no-repeat center center;
     background-size: cover;
   }
 }

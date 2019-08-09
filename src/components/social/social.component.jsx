@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import GitHubButton from "react-github-btn";
-import "./Social.css";
+import "./social.styles.scss";
 
 export class Social extends PureComponent {
   componentDidMount() {
