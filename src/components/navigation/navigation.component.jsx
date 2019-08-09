@@ -8,19 +8,12 @@ import { u1F468 } from "react-icons-kit/noto_emoji_regular/u1F468";
 import { u1F31D } from "react-icons-kit/noto_emoji_regular/u1F31D";
 import "./navigation.styles.scss";
 
-export const Navigation = props => {
+export const Navigation = ({ time, darkmode }) => {
   return (
     <header>
       <nav>
         <div className="title">
-          <Icon
-            size={34}
-            icon={
-              props.currentTime >= 17 || props.currentTime <= 6
-                ? u1F303
-                : u1F307
-            }
-          />
+          <Icon size={34} icon={time >= 17 || time <= 6 ? u1F303 : u1F307} />
           <br />
           <span>Tadas Knieža</span>
         </div>
@@ -34,11 +27,7 @@ export const Navigation = props => {
           <button data-tip="Join Newsletter" className="darkmode">
             <Icon size={42} icon={u1F4EC} />
           </button>
-          <button
-            onClick={props.darkmode}
-            data-tip="Dark Mode"
-            className="darkmode"
-          >
+          <button onClick={darkmode} data-tip="Dark Mode" className="darkmode">
             {<Icon size={42} icon={u1F31D} />}
           </button>
         </div>

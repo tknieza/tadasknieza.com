@@ -2,14 +2,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   max-width: 800px;
   min-width: 330px;
   height: 90px;
-  margin: auto;
-  margin-bottom: 1rem;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  margin: auto auto 1rem auto;
 }
 
 header {
@@ -23,30 +22,30 @@ header {
   margin: 1rem;
   text-align: center;
   color: white;
-}
 
-.title > * {
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  * {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
 }
 
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  span {
+    margin-right: 0.5rem;
+  }
 }
 
 .links > * {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   color: rgba(0, 0, 0, 0.4);
   text-align: center;
   width: 50%;
-  margin: 0.7rem;
-}
-
-.links span {
-  margin-right: 0.5rem;
+  margin: 1rem;
 }
 
 button {
@@ -54,18 +53,18 @@ button {
   transition: all 0.2s ease;
   border: none;
   background: none;
-}
-button:focus {
-  outline: 0;
-}
 
-a:hover,
-button:hover {
-  color: rgba(0, 0, 0, 0.75);
-}
+  &:focus {
+    outline: 0;
+  }
 
-.heart:hover {
-  color: rgb(255, 117, 117);
+  &:hover {
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  &.heart {
+    color: rgb(255, 117, 117);
+  }
 }
 
 .darkmode--activated * {
@@ -85,10 +84,10 @@ button:hover {
     display: initial;
     margin: 0;
     max-width: 100%;
-  }
 
-  nav div {
-    margin: 1rem 0;
+    div {
+      margin: 1rem 0;
+    }
   }
 
   br {
@@ -98,17 +97,17 @@ button:hover {
   .links {
     width: 100%;
     margin: 1rem 0;
-  }
 
-  .links span {
-    margin-right: 0.2rem;
+    span {
+      margin-right: 0.2rem;
+    }
   }
 
   .title {
     margin: 0 auto;
-  }
 
-  .title span {
-    margin-left: 0.5rem;
+    span {
+      margin-left: 0.5rem;
+    }
   }
 }

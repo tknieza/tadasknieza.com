@@ -13,8 +13,8 @@ a {
   margin-right: 0.8rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}
 
-a:hover {
-  color: rgba(0, 0, 0, 0.8);
+  &:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
 }

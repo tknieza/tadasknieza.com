@@ -14,7 +14,7 @@ export class Social extends PureComponent {
     return (
       <div className="social darkmode-ignore">
         <GitHubButton
-          href="https://github.com/ordoven"
+          href="https://github.com/tknieza"
           data-size="large"
           aria-label="Follow @ordoven on GitHub"
         >
