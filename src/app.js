@@ -14,7 +14,7 @@ const darkmode = new Darkmode();
 
 export const App = () => {
   return (
-    <div className="Homepage">
+    <div className="app">
       <ReactTooltip />
       <Navigation
         time={new Date().getHours()}
