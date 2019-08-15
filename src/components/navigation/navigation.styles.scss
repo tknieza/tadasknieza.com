@@ -8,7 +8,7 @@ nav {
   max-width: 800px;
   min-width: 330px;
   height: 90px;
-  margin: auto auto 1rem auto;
+  margin: auto auto 5rem auto;
 }
 
 header {
@@ -16,6 +16,10 @@ header {
   padding: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+span {
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu";
 }
 
 .title {

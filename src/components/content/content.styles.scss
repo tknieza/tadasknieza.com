@@ -1,0 +1,59 @@
+$mobile-resolution: 800px;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+
+p {
+  width: 70%;
+  margin: 1.5rem 0;
+}
+.section {
+  max-width: $mobile-resolution;
+  min-width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: $mobile-resolution) {
+    margin: 0 1rem;
+  }
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  div {
+    margin: 1rem;
+    width: 50%;
+    padding: 0.5rem 2rem;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  p {
+    width: 100%;
+  }
+
+  h3 {
+    text-align: right;
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  p {
+    width: 100%;
+  }
+
+  .grid {
+    display: block;
+
+    div {
+      padding: 0;
+      margin-right: 2rem;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      width: 95%;
+    }
+  }
+}

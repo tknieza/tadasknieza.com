@@ -12,20 +12,18 @@ import { NavButton } from "../nav-button/nav-button.component";
 
 export const Navigation = ({ time, darkmode }) => {
   return (
-    <header>
-      <nav>
-        <div className="title">
-          <Icon size={34} icon={time >= 17 || time <= 6 ? u1F303 : u1F307} />
-          <br />
-          <span>Tadas Knieža</span>
-        </div>
-        <div className="links">
-          <NavButton desc="About Me" icon={u1F468} />
-          <NavButton desc="Articles" icon={u1F4DA} />
-          <NavButton desc="Join Newsletter" icon={u1F4EC} />
-          <NavButton onClick={darkmode} desc="Dark Mode" icon={u1F31D} />
-        </div>
-      </nav>
-    </header>
+    <nav>
+      <div className="title">
+        <Icon size={34} icon={time >= 17 || time <= 6 ? u1F303 : u1F307} />
+        <br />
+        <span>Tadas Knieža</span>
+      </div>
+      <div className="links">
+        <NavButton desc="About Me" icon={u1F468} />
+        <NavButton desc="Articles" icon={u1F4DA} />
+        <NavButton desc="Join Newsletter" icon={u1F4EC} />
+        <NavButton onClick={darkmode} desc="Dark Mode" icon={u1F31D} />
+      </div>
+    </nav>
   );
 };

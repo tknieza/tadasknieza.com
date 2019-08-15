@@ -1,14 +1,9 @@
 import React from "react";
-
 import ReactTooltip from "react-tooltip";
-
 import Darkmode from "darkmode-js";
-
 import { Navigation } from "./components/navigation/navigation.component";
 import { Content } from "./components/content/content.component";
 import { Footer } from "./components/footer/footer.component";
-
-import "./app.css";
 
 const darkmode = new Darkmode();
 

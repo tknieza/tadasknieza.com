@@ -13,21 +13,9 @@ body {
   background-size: cover;
 }
 
-.darkmode-background,
-.darkmode-layer {
-  margin: 0;
-}
-
 ::selection {
   background: #fff744; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   background: #fff744; /* Gecko Browsers */
-}
-
-@media only screen and (min-width: 800px) {
-  #root {
-    background: url("./assets/bg.svg") no-repeat center center;
-    background-size: cover;
-  }
 }
