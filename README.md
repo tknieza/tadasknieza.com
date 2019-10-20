@@ -1,20 +1,23 @@
 # tadasknieza.com
 
-## Available Scripts
+Tadas' personal website running on React and Node.js. Deployed using Netlify.
 
-### `npm start`
+# Note
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I've made my website open source for your inspiration, motivation, and curiosity. I encourage you to be creative and create unique, custom designs and content.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.<br>
+Clone this repository to start tinkering around.
 
-### `npm run build`
+```bash
+git clone https://github.com/tknieza/tadasknieza.com.git
+```
 
-Builds the app for production to the `build` folder.
+## Contributing
 
-### `npm run eject`
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Copies all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into the project to have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
+
+All my code is [MIT](https://choosealicense.com/licenses/mit/) licensed. External tools and libraries follow their respective licenses.
