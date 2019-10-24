@@ -1,5 +1,14 @@
 footer {
   margin-top: 1rem;
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    margin: 0;
+  }
 }
 
 div.section {
