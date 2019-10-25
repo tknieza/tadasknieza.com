@@ -3,11 +3,10 @@ $mobile-resolution: 800px;
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
 
 p {
-  width: 70%;
   margin: 1.5rem 0;
 }
 .section {
-  max-width: $mobile-resolution;
+  max-width: 50rem;
   min-width: 400px;
   margin: auto;
   margin-bottom: 2rem;
@@ -16,23 +15,19 @@ p {
   }
 }
 
+.card {
+  margin: 1rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-  div {
-    margin: 1rem;
-    width: 50%;
-    padding: 0.5rem 2rem;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-      0 6px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-
-  p {
-    width: 100%;
-  }
 
   h3 {
     text-align: right;
@@ -40,11 +35,15 @@ p {
   }
 }
 
-@media only screen and (max-width: $mobile-resolution) {
-  p {
-    width: 100%;
+.hi {
+  display: flex;
+  justify-content: center;
+  div {
+    width: 50%;
   }
+}
 
+@media only screen and (max-width: $mobile-resolution) {
   .grid {
     display: block;
 
@@ -56,4 +55,45 @@ p {
       width: 95%;
     }
   }
+}
+
+.illustrations {
+  position: absolute;
+}
+
+.fade-appear {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear 100ms, transform 300ms ease-in-out 100ms;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear 100ms, transform 300ms ease-in-out 100ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear 100ms, transform 300ms ease-in-out 100ms;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+}
+
+.fade-exit-done {
+  opacity: 0;
 }

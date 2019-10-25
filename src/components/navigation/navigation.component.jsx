@@ -20,8 +20,8 @@ export const Navigation = ({ time, darkmode }) => {
       </div>
       <div className="links">
         <NavButton desc="About Me" icon={u1F468} />
-        <NavButton desc="Articles" icon={u1F4DA} />
-        <NavButton desc="Join Newsletter" icon={u1F4EC} />
+        <NavButton desc="Books" icon={u1F4DA} />
+        {/* <NavButton desc="Join Newsletter" icon={u1F4EC} /> */}
         <NavButton onClick={darkmode} desc="Dark Mode" icon={u1F31D} />
       </div>
     </nav>
