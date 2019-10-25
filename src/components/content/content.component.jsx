@@ -1,13 +1,7 @@
-import React, { useState } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { Social } from "../social/social.component";
+import React from "react";
 
-import image1 from "../../assets/science-statistics.svg";
-import image2 from "../../assets/nature-butterfly.svg";
-import image3 from "../../assets/education-book.svg";
-import image4 from "../../assets/survey-chat.svg";
-import image5 from "../../assets/science-clipboard.svg";
-import image6 from "../../assets/education-abacus.svg";
+import { Slideshow } from "../slideshow/slideshow.component";
+import { Social } from "../social/social.component";
 
 import "./content.styles.scss";
 
@@ -19,13 +13,10 @@ export class Content extends React.Component {
     };
   }
 
-  images = [image1, image2, image3, image4, image5, image6];
-  interval = 0;
-
   componentDidMount() {
     this.interval = setInterval(() => {
       this.setState({
-        image: (this.state.image + 1) % this.images.length
+        image: this.state.image + 1
       });
     }, 3500);
   }
@@ -45,23 +36,7 @@ export class Content extends React.Component {
             </p>
             <Social />
           </div>
-          {/* Create a slideshow of icons - trying to convey a message here! */}
-
-          <TransitionGroup>
-            <CSSTransition
-              key={this.images[this.state.image]}
-              timeout={600}
-              classNames="fade"
-            >
-              <img
-                className="illustrations"
-                height="300rem"
-                width="400rem"
-                src={this.images[this.state.image]}
-                alt="illustration"
-              />
-            </CSSTransition>
-          </TransitionGroup>
+          <Slideshow currentImageIndex={this.state.image} />
         </div>
         <div className="section">
           <h2>Personal Projects</h2>
