@@ -23,9 +23,13 @@ span {
 }
 
 .title {
-  margin: 1rem;
+  padding: 0;
   text-align: center;
   color: white;
+
+  a {
+    margin: 0;
+  }
 
   * {
     font-size: 1.5rem;
@@ -49,7 +53,7 @@ span {
   color: rgba(0, 0, 0, 0.4);
   text-align: center;
   width: 50%;
-  margin: 1rem;
+  margin: 1.3rem;
 }
 
 button {
@@ -109,6 +113,10 @@ button {
 
   .title {
     margin: 0 auto;
+
+    a {
+      margin: 0;
+    }
 
     span {
       margin-left: 0.5rem;
