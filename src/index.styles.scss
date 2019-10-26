@@ -10,7 +10,7 @@ body {
 #root {
   margin: 0;
   background: url("./assets/bg.svg") no-repeat center center;
-  background-size: cover;
+  background-size: 113%;
 }
 
 ::selection {
@@ -18,4 +18,10 @@ body {
 }
 ::-moz-selection {
   background: #fff744; /* Gecko Browsers */
+}
+
+@media only screen and (max-width: 800px) {
+  #root {
+    background: none;
+  }
 }

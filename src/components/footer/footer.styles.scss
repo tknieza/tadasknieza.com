@@ -27,3 +27,10 @@ a {
     color: rgba(0, 0, 0, 0.8);
   }
 }
+
+.technology {
+  a:last-of-type {
+    margin: 0;
+  }
+  margin-right: 0.5rem;
+}

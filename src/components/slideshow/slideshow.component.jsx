@@ -8,11 +8,11 @@ import image4 from "../../assets/survey-chat.svg";
 import image5 from "../../assets/science-clipboard.svg";
 import image6 from "../../assets/education-abacus.svg";
 
-export const Slideshow = ({ currentImageIndex }) => {
+export const Slideshow = ({ currentImageIndex, ...otherProps }) => {
   const images = [image1, image2, image3, image4, image5, image6];
 
   return (
-    <TransitionGroup>
+    <TransitionGroup {...otherProps}>
       <CSSTransition
         key={images[currentImageIndex % images.length]}
         timeout={600}

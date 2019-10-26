@@ -14,9 +14,9 @@ export const Footer = () => {
           <a href="https://twitter.com/tadasknieza">Twitter</a>
           <a href="https://www.linkedin.com/in/tadas-knieza/">LinkedIn</a>
           <a href="mailto:tadasknieza@gmail.com">Email</a>
-          <a href="https://github.com/tknieza/tadasknieza.com">View source</a>
+          <a href="https://github.com/tknieza/tadasknieza.com">Source</a>
         </div>
-        <div>
+        <div className="technology">
           <a href="https://reactjs.org/" data-tip="Built with React">
             <img width="30rem" src={reactImage} alt="React" />
           </a>
