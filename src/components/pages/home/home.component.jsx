@@ -31,7 +31,7 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div>
         <div className="section hi">
           <div>
             <h1>Hi, I'm Tadas</h1>
@@ -81,10 +81,6 @@ export class Home extends React.Component {
               alt="Select Note"
             />
           </div>
-        </div>
-        <div className="section">
-          <h2>Contribution To Open Source</h2>
-          <div />
         </div>
         <div className="section">
           <h2>Other People's Opinions</h2>
