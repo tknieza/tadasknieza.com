@@ -37,7 +37,7 @@ export class Home extends React.Component {
             <h1>Hi, I'm Tadas</h1>
             <p>
               I build open-source web applications and spend time in modern
-              JavaScript, design & java development.
+              JavaScript, design & Java development.
             </p>
             <Social />
           </div>

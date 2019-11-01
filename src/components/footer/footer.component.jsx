@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="section">
-        <div>
+        <div className="footer-links">
           <a href="https://github.com/tknieza">Github</a>
           <a href="https://twitter.com/tadasknieza">Twitter</a>
           <a href="https://www.linkedin.com/in/tadas-knieza/">LinkedIn</a>
