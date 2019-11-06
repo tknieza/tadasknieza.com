@@ -35,8 +35,6 @@ p {
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: white;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
   overflow: hidden;
@@ -44,8 +42,6 @@ p {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 
   h3 {
