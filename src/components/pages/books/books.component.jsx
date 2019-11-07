@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Footer } from "../../footer/footer.component";
-
 export const Books = () => (
   <div>
     <div className="section">
@@ -53,6 +51,5 @@ export const Books = () => (
         </li>
       </ul>
     </div>
-    <Footer />
   </div>
 );

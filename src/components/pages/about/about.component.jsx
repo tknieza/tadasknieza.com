@@ -1,27 +1,30 @@
 import React from "react";
 
-import { Footer } from "../../footer/footer.component";
-
 export const About = () => (
   <div>
     <div className="section">
       <h1>Me</h1>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-        laboriosam dolorem voluptates delectus asperiores mollitia? Voluptatibus
-        tenetur adipisci perferendis eos officia reprehenderit reiciendis, nemo
-        fugiat, laudantium minima aperiam numquam accusantium.
+        I am an aspiring software engineer that has practical knowledge of
+        building and contributing to software systems. I have been interested in
+        software since high school, where I learnt to code video games and
+        participated in competitive coding competitions. My primary focus
+        nowadays is modern Web application development as, in my opinion,
+        Progressive Web Applications are the future of the modern Web!
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        ducimus placeat soluta odio nobis error.
+        Recently, I have started uploading and version-controlling my software
+        projects like{" "}
+        <a href="https://sleepy-joliot-a28cc4.netlify.com">Flica</a>&{" "}
+        <a href="https://sharp-brahmagupta-cd3ffa.netlify.com/">Select Note</a>
+        on Github.
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam in
-        consectetur sed, hic iusto deleniti blanditiis id commodi illo alias,
-        numquam quod modi! Tempora, aspernatur.
+        These projects utilize external APIs, databases and front-end web
+        frameworks. As a Newcastle University computer science student, I have
+        achieved a first-class honours average through stage 1 of my studies.
       </p>
 
       <h3>Around the Web</h3>
@@ -35,7 +38,7 @@ export const About = () => (
           Github: <a href="https://github.com/tknieza">tknieza</a>{" "}
         </li>
         <li>
-          Twitter: <a href="https://twitter.com/tknieza">tadasknieza</a>
+          Twitter: <a href="https://twitter.com/tadasknieza">tadasknieza</a>
         </li>
       </ul>
 
@@ -80,6 +83,5 @@ export const About = () => (
         </li>
       </ul>
     </div>
-    <Footer />
   </div>
 );

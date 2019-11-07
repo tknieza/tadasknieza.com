@@ -23,7 +23,7 @@ export class Home extends React.Component {
       this.setState({
         image: this.state.image + 1
       });
-    }, 3500);
+    }, 2500);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -32,7 +32,7 @@ export class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className="section hi">
+        <div className="section heading">
           <div>
             <h1>Hi, I'm Tadas</h1>
             <p>

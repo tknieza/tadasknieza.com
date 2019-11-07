@@ -35,7 +35,12 @@ p {
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 200ms ease-in-out;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02), 0 6px 6px rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
 
   overflow: hidden;
   position: relative;
@@ -50,7 +55,7 @@ p {
   }
 }
 
-.hi {
+.heading {
   display: flex;
   justify-content: center;
   div {
@@ -89,7 +94,8 @@ p {
   .slideshow {
     display: none;
   }
-  .hi {
+
+  .heading {
     display: block;
     div {
       width: 100%;
@@ -100,6 +106,10 @@ p {
     background: none;
     box-shadow: none;
     width: 90%;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   .darkmode--activated {

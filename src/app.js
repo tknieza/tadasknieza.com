@@ -26,7 +26,6 @@ export const App = () => {
           <Route exact path="/">
             <div className="main">
               <Home />
-              <Footer />
             </div>
           </Route>
           <Route path="/about">
@@ -36,6 +35,7 @@ export const App = () => {
         <Route path="/books">
           <Books />
         </Route>
+        <Footer />
       </div>
     </Router>
   );
