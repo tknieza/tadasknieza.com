@@ -1,4 +1,5 @@
 import React from "react";
+import posed from "react-pose";
 
 import { Slideshow } from "../../slideshow/slideshow.component";
 import { Social } from "../../social/social.component";
@@ -14,11 +15,18 @@ export class Home extends React.Component {
   constructor() {
     super();
     this.state = {
-      image: 0
+      image: 0,
+      isVisible: false
     };
   }
 
+  Wrapper = posed.div({
+    visible: { opacity: 1, transition: { duration: 400, ease: "linear" } },
+    hidden: { opacity: 0, transition: { duration: 400, ease: "linear" } }
+  });
+
   componentDidMount() {
+    this.setState({ isVisible: !this.state.isVisible });
     this.interval = setInterval(() => {
       this.setState({
         image: this.state.image + 1
@@ -31,7 +39,7 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <this.Wrapper pose={this.state.isVisible ? "visible" : "hidden"}>
         <div className="section heading">
           <div>
             <h1>Hi, I'm Tadas</h1>
@@ -101,7 +109,7 @@ export class Home extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </this.Wrapper>
     );
   }
 }
