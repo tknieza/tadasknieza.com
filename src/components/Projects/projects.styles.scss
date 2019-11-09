@@ -37,6 +37,7 @@ $mobile-resolution: 800px;
   p {
     justify-content: center;
     width: 30rem;
+    font-size: 1.2rem;
     @media only screen and (max-width: $mobile-resolution) {
       position: absolute;
       display: none;
@@ -47,10 +48,15 @@ $mobile-resolution: 800px;
     width: 10rem;
     padding: 1rem;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     * {
-      padding-right: 0.4rem;
+      padding-right: 1rem;
+      padding-top: 0.2rem;
+
       height: 100%;
+      &:last-child {
+        padding: 0;
+      }
     }
   }
 
