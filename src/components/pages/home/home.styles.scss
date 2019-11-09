@@ -42,10 +42,10 @@ $mobile-resolution: 800px;
   right: 0rem;
 }
 
-.project {
-  min-height: 20rem;
-  margin: 1.5rem 0;
-}
+// .project {
+//   min-height: 20rem;
+//   margin: 1.5rem 0;
+// }
 
 @media only screen and (max-width: $mobile-resolution) {
   .grid {

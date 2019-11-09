@@ -68,7 +68,7 @@ class Books extends React.Component {
                 Bruce Eckel, <b>Thinking in Java</b>, Prentice Hall, 2006.
               </li>
               <li>
-                Douglas Crockford, <b>JavaScript: The Good Parts</b>, Yahoo
+                Douglas Crockford, <b>JavaScript - The Good Parts</b>, Yahoo
                 Press, 2008.
               </li>
             </ul>
