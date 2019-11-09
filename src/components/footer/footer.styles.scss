@@ -22,27 +22,28 @@ div.section {
   padding-bottom: 1rem;
 }
 
-a {
-  color: rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-  margin-right: 0.8rem;
-  transition: color 0.2s ease;
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.8);
-  }
-}
-
 .technology,
 .footer-links {
   display: flex;
   justify-content: center;
   padding: 0.1rem;
 
-  a:last-of-type {
-    margin: 0;
-  }
   img {
     padding-top: 0.1rem;
+  }
+
+  * {
+    margin: 0 0.4rem;
+  }
+}
+
+.darkmode--activated {
+  .footer-links {
+    * {
+      color: rgba(0, 0, 0, 0.8);
+      &:hover {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
   }
 }

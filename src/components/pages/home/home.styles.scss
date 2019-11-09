@@ -1,32 +1,8 @@
 $mobile-resolution: 800px;
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
-
-p {
-  margin: 1rem 0;
-}
-.section {
-  max-width: 50rem;
-  margin: auto;
-  margin-bottom: 2rem;
-  @media only screen and (max-width: $mobile-resolution) {
-    margin: 0 1rem;
-  }
-}
-
 .darkmode--activated {
   .card {
     background-color: #121212;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.19),
-      0 2px 6px rgba(255, 255, 255, 0.23);
-    p,
-    h3 {
-      color: white;
-    }
-
-    .title {
-      color: white;
-    }
   }
 }
 
@@ -37,37 +13,31 @@ p {
   background-color: white;
   transition: box-shadow 200ms ease-in-out;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02), 0 6px 6px rgba(0, 0, 0, 0.12);
-
-  &:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.14);
+  }
 }
 
 .grid {
   display: flex;
-
-  h3 {
-    text-align: right;
-    font-style: italic;
-  }
 }
 
 .heading {
   display: flex;
-  justify-content: center;
   div {
     width: 50%;
   }
 }
 
 .logo {
-  opacity: 0.15;
-  position: absolute;
-  width: 20rem;
   margin: auto;
+  position: absolute;
+  opacity: 0.15;
+  width: 20rem;
   bottom: -5rem;
   right: 0rem;
 }
@@ -75,11 +45,6 @@ p {
 .project {
   min-height: 20rem;
   margin: 1.5rem 0;
-}
-
-.title {
-  padding: 1rem;
-  margin: 0;
 }
 
 @media only screen and (max-width: $mobile-resolution) {

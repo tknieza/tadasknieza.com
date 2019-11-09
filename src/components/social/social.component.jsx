@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubButton from "react-github-btn";
-import "./social.styles.scss";
+// import "./social.styles.scss";
 
 export const Social = () => (
   <div className="social darkmode-ignore">

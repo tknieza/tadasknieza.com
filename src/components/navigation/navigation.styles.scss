@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,22 +20,17 @@ span {
 
 .title {
   padding: 0;
+  margin: 0;
   text-align: center;
   color: white;
-
-  a {
-    margin: 0;
-  }
-
   * {
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.6rem;
+    margin: 0;
   }
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 
   span {
@@ -42,9 +39,7 @@ span {
 }
 
 .links > * {
-  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
-  color: rgba(0, 0, 0, 0.4);
   text-align: center;
   width: 50%;
   margin: 1.3rem;
@@ -52,29 +47,6 @@ span {
   @media only screen and (max-width: 800px) {
     margin: 0;
   }
-}
-
-button {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-
-  &:focus {
-    outline: 0;
-  }
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.75);
-  }
-
-  &.heart {
-    color: rgb(255, 117, 117);
-  }
-}
-
-.darkmode--activated * {
-  color: black;
 }
 
 @media only screen and (max-width: 800px) {
@@ -96,6 +68,7 @@ button {
   }
 
   .links {
+    margin-top: 1rem;
     width: 100%;
 
     span {
@@ -112,6 +85,17 @@ button {
 
     span {
       margin-left: 0.5rem;
+    }
+  }
+}
+
+.darkmode--activated {
+  .links {
+    * {
+      color: rgba(0, 0, 0, 0.85);
+      &:hover {
+        color: rgba(0, 0, 0, 0.9);
+      }
     }
   }
 }
