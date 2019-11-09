@@ -1,18 +1,17 @@
 import React from "react";
 
-import { Wrapper } from "../../../animations/Wrapper.animation";
+import Slideshow from "../../slideshow/slideshow.component";
+import Social from "../../social/social.component";
+import Wrapper from "../../../animations/Wrapper.animation";
 
-import { Slideshow } from "../../slideshow/slideshow.component";
-import { Social } from "../../social/social.component";
-
-import selectNote from "../../../assets/select-note.svg";
-import selectNoteTitle from "../../../assets/select-note-title.svg";
 import flica from "../../../assets/flica.svg";
 import flicaTitle from "../../../assets/flica-title.svg";
+import selectNote from "../../../assets/select-note.svg";
+import selectNoteTitle from "../../../assets/select-note-title.svg";
 
 import "./home.styles.scss";
 
-export class Home extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -112,3 +111,5 @@ export class Home extends React.Component {
     );
   }
 }
+
+export default Home;

@@ -1,6 +1,6 @@
 import posed from "react-pose";
 
-export const Wrapper = posed.div({
+const Wrapper = posed.div({
   visible: { opacity: 1, transition: { duration: 400, ease: "linear" } },
   hidden: { opacity: 0.2 },
   popped: {
@@ -10,3 +10,5 @@ export const Wrapper = posed.div({
     transition: { duration: 700 }
   }
 });
+
+export default Wrapper;

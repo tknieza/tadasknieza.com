@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import image1 from "../../assets/science-statistics.svg";
@@ -8,7 +9,7 @@ import image4 from "../../assets/survey-chat.svg";
 import image5 from "../../assets/science-clipboard.svg";
 import image6 from "../../assets/education-abacus.svg";
 
-export const Slideshow = ({ currentImageIndex, ...otherProps }) => {
+const Slideshow = ({ currentImageIndex, ...otherProps }) => {
   const images = [image1, image2, image3, image4, image5, image6];
 
   return (
@@ -29,3 +30,9 @@ export const Slideshow = ({ currentImageIndex, ...otherProps }) => {
     </TransitionGroup>
   );
 };
+
+Slideshow.propTypes = {
+  currentImageIndex: PropTypes.number.isRequired
+};
+
+export default Slideshow;

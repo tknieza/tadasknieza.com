@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Wrapper } from "../../../animations/Wrapper.animation";
+import Wrapper from "../../../animations/Wrapper.animation";
 
-export class Books extends React.Component {
+class Books extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -78,3 +78,5 @@ export class Books extends React.Component {
     );
   }
 }
+
+export default Books;

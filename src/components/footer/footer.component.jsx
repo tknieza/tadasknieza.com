@@ -5,7 +5,7 @@ import "./footer.styles.scss";
 import netlifyImage from "../../assets/netlify.png";
 import reactImage from "../../assets/react.png";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer>
       <div className="section">
@@ -28,3 +28,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

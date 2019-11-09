@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App } from "./app";
-import "./index.styles.scss";
-import * as serviceWorker from "./serviceWorker";
 import Typography from "typography";
 import githubTheme from "typography-theme-github";
+
+import App from "./app";
+import * as serviceWorker from "./serviceWorker";
+
+import "./index.styles.scss";
 
 new Typography(githubTheme).injectStyles();
 

@@ -1,19 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
 import Darkmode from "darkmode-js";
+import ReactTooltip from "react-tooltip";
 
-import { Navigation } from "./components/navigation/navigation.component";
-
-// Pages
-import { Home } from "./components/pages/home/home.component";
-import { About } from "./components/pages/about/about.component";
-import { Books } from "./components/pages/books/books.component";
-import { Footer } from "./components/footer/footer.component";
+import About from "./components/pages/about/about.component";
+import Books from "./components/pages/books/books.component";
+import Footer from "./components/footer/footer.component";
+import Home from "./components/pages/home/home.component";
+import Navigation from "./components/navigation/navigation.component";
 
 const darkmode = new Darkmode({ saveInCookies: true });
 
-export const App = () => {
+const App = () => {
   return (
     <Router>
       <div className="app">
@@ -45,3 +43,5 @@ export const App = () => {
     </Router>
   );
 };
+
+export default App;

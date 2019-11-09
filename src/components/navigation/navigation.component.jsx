@@ -1,6 +1,8 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+
+import NavButton from "../nav-button/nav-button.component";
 
 import { Icon } from "react-icons-kit";
 import { u1F307 } from "react-icons-kit/noto_emoji_regular/u1F307"; // day
@@ -11,9 +13,7 @@ import { u1F31D } from "react-icons-kit/noto_emoji_regular/u1F31D";
 
 import "./navigation.styles.scss";
 
-import { NavButton } from "../nav-button/nav-button.component";
-
-export const Navigation = ({ time, darkmode }) => {
+const Navigation = ({ time, darkmode }) => {
   return (
     <nav>
       <div className="title">
@@ -32,3 +32,10 @@ export const Navigation = ({ time, darkmode }) => {
     </nav>
   );
 };
+
+Navigation.propTypes = {
+  time: PropTypes.number.isRequired,
+  darkmode: PropTypes.object.isRequired
+};
+
+export default Navigation;
