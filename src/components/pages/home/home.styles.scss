@@ -1,27 +1,5 @@
 $mobile-resolution: 800px;
 
-.darkmode--activated {
-  .card {
-    background-color: #121212;
-  }
-}
-
-.card {
-  margin: 1rem;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  background-color: white;
-  transition: box-shadow 200ms ease-in-out;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02), 0 6px 6px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-
-  &:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.14);
-  }
-}
-
 .grid {
   display: flex;
 }
@@ -42,11 +20,6 @@ $mobile-resolution: 800px;
   right: 0rem;
 }
 
-// .project {
-//   min-height: 20rem;
-//   margin: 1.5rem 0;
-// }
-
 @media only screen and (max-width: $mobile-resolution) {
   .grid {
     display: block;
@@ -64,23 +37,6 @@ $mobile-resolution: 800px;
     display: block;
     div {
       width: 100%;
-    }
-  }
-
-  .card {
-    background: none;
-    box-shadow: none;
-    width: 90%;
-
-    &:hover {
-      box-shadow: none;
-    }
-  }
-
-  .darkmode--activated {
-    .card {
-      background: none;
-      box-shadow: none;
     }
   }
 }

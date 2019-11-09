@@ -1,0 +1,65 @@
+$mobile-resolution: 800px;
+
+.projects-personal {
+  img {
+    bottom: -3rem;
+    left: -1rem;
+    width: 10rem;
+    margin: auto;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  h3 {
+    text-align: right;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    margin-left: 0.6rem;
+  }
+}
+
+.card {
+  margin: 1rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  transition: box-shadow 200ms ease-in-out;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02), 0 6px 6px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.14);
+  }
+}
+
+.darkmode--activated {
+  .card {
+    background-color: #121212;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  .card {
+    background: none;
+    box-shadow: none;
+    width: 90%;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .darkmode--activated {
+    .card {
+      background: none;
+      box-shadow: none;
+    }
+  }
+}

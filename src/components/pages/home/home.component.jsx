@@ -1,6 +1,7 @@
 import React from "react";
 
 import Projects from "../../Projects/projects.component";
+import ProjectsPersonal from "../../ProjectsPersonal/projectsPersonal.component";
 import Slideshow from "../../slideshow/slideshow.component";
 import Social from "../../social/social.component";
 import Wrapper from "../../../animations/Wrapper.animation";
@@ -54,25 +55,11 @@ class Home extends React.Component {
             currentImageIndex={this.state.image}
           />
         </div>
+
         <div className="section">
-          <h2>Personal Projects</h2>
-          <div className="grid">
-            <div className="card">
-              <p>
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur."
-              </p>
-              <h3>- Sam</h3>
-            </div>
-            <div className="card">
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              </p>
-              <h3>- Craig</h3>
-            </div>
-          </div>
+          <ProjectsPersonal />
         </div>
+
         <div className="section">
           <h2>Open-Source Projects</h2>
           <Projects />
