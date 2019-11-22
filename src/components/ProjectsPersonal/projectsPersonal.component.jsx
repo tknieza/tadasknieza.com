@@ -43,7 +43,7 @@ const ProjectsPersonal = () => (
         <p>
           A note-taking web app with a user database system, login features,
           routing & more. With simplicity in mind - just create a user account
-          and start making notes hassle free!
+          and start making notes hassle-free!
         </p>
         <div className="card-footer">
           <Social

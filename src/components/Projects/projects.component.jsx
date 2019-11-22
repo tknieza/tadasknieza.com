@@ -100,8 +100,8 @@ const Projects = () => {
           Agami
         </h2>
         <p>
-          Puzzle game written in C#/Unity. Colors fundamentaly change the world
-          & its obsticles enabling players to solve puzzles.
+          This Puzzle game is written in C#/Unity. Colours fundamentally change
+          the world & its obstacles, enabling players to solve puzzles.
         </p>
         <div className="buttons">
           <a
@@ -120,7 +120,7 @@ const Projects = () => {
         </h2>
         <p>
           A fully-fledged action-adventure video game featuring advanced level
-          design, player systems, game states. libero!
+          design, player systems, game states.
         </p>
         <div className="buttons">
           <Social
