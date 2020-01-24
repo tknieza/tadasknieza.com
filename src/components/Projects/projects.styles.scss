@@ -63,6 +63,6 @@ $mobile-resolution: 800px;
   @media only screen and (max-width: $mobile-resolution) {
     margin: 0;
     justify-content: space-evenly;
-    margin: 0 3rem;
+    padding-left: 1rem;
   }
 }
