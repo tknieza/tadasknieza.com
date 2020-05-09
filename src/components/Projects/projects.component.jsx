@@ -30,7 +30,7 @@ const Projects = () => {
             github={{
               url: "https://github.com/tknieza/flica",
               title: "Source",
-              desc: "Source code for Flica"
+              desc: "Source code for Flica",
             }}
           />
           <a
@@ -56,7 +56,7 @@ const Projects = () => {
             github={{
               url: "https://github.com/tknieza/select-note",
               title: "Source",
-              desc: "Source code for Select Note"
+              desc: "Source code for Select Note",
             }}
           />
           <a
@@ -82,7 +82,7 @@ const Projects = () => {
             github={{
               url: "https://github.com/tknieza/tadasknieza.com",
               title: "Source",
-              desc: "Source code for tadasknieza.com"
+              desc: "Source code for tadasknieza.com",
             }}
           />
           <a
@@ -127,7 +127,7 @@ const Projects = () => {
             github={{
               url: "https://github.com/tknieza/king-pixel",
               title: "Source",
-              desc: "Source code for King Pixel"
+              desc: "Source code for King Pixel",
             }}
           />
           <a
@@ -153,11 +153,11 @@ const Projects = () => {
             github={{
               url: "https://github.com/tknieza/visual-twitter",
               title: "Source",
-              desc: "Source code for Visual Twitter"
+              desc: "Source code for Visual Twitter",
             }}
           />
           <a
-            href="https://github.com/tknieza"
+            href="https://github.com/tknieza/visual-twitter"
             className="button"
             aria-label="Visual Twitter page"
           >
