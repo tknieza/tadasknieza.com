@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Darkmode from "darkmode-js";
 import ReactTooltip from "react-tooltip";
 
@@ -20,23 +20,19 @@ const App = () => {
           time={new Date().getHours()}
           darkmode={() => darkmode.toggle()}
         />
-        <Switch>
-          <Route exact path="/">
-            <div className="homepage">
-              <Home />
-            </div>
-          </Route>
-          <Route path="/about">
-            <div>
-              <About />
-            </div>
-          </Route>
-          <Route path="/books">
-            <div>
-              <Books />
-            </div>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <div className="homepage">
+                <Home />
+              </div>
+            }
+          ></Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/books" element={<Books />} />
+        </Routes>
         <Footer />
       </div>
     </Router>

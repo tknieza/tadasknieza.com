@@ -18,6 +18,20 @@ span {
   font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu";
 }
 
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
 .title {
   padding: 0;
   margin: 0;

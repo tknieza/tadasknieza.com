@@ -8,13 +8,13 @@ import "./nav-button.styles.scss";
 
 const NavButton = ({ desc, icon, ...otherProps }) => (
   <Link className="button" aria-label={desc} data-tip={desc} {...otherProps}>
-    {<Icon size={42} icon={icon} />}
+    <Icon size={42} icon={icon} />
   </Link>
 );
 
 NavButton.propTypes = {
   desc: PropTypes.string,
-  icon: PropTypes.object
+  icon: PropTypes.object,
 };
 
 export default NavButton;
