@@ -48,11 +48,10 @@ a {
 }
 
 .page {
-  width: 90%;
   margin: auto;
 
   @media only screen and (max-width: 800px) {
-    width: 94%;
+    width: 95%;
   }
 }
 

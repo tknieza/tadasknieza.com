@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 import NavButton from "../nav-button/nav-button.component";
 
@@ -27,15 +27,25 @@ const Navigation = ({ time, darkmode }) => {
       <div className="links">
         <NavButton to="/about" desc="About Me" icon={u1F468} />
         <NavButton to="/books" desc="Books" icon={u1F4DA} />
-        <NavButton onClick={darkmode} desc="Dark Mode" icon={u1F31D} />
+        <button
+          href="#"
+          className="button"
+          aria-label={"Dark Mode"}
+          data-tip={"Dark Mode"}
+          onClick={darkmode}
+        >
+          <Icon size={42} icon={u1F31D} />
+        </button>
       </div>
+
+      <Outlet />
     </nav>
   );
 };
 
 Navigation.propTypes = {
   time: PropTypes.number.isRequired,
-  darkmode: PropTypes.object.isRequired
+  darkmode: PropTypes.func.isRequired,
 };
 
 export default Navigation;
