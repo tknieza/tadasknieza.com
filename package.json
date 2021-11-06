@@ -22,7 +22,9 @@
     "web-vitals": "^1.1.2",
     "typography": "^0.16.21",
     "typography-inject-fonts": "0.0.0",
-    "typography-theme-github": "^0.16.19"
+    "typography-theme-github": "^0.16.19",
+    "immer": ">=9.0.6",
+    "set-value": ">=4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
