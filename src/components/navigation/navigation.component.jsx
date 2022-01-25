@@ -1,45 +1,48 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Outlet, Link } from "react-router-dom";
-
-import NavButton from "../nav-button/nav-button.component";
-
+import MyPopover from "../popover/popover.component";
+import { FiMoon, FiCodepen } from "react-icons/fi";
+import { SiAboutdotme } from "react-icons/si";
 import { Icon } from "react-icons-kit";
 import { u1F307 } from "react-icons-kit/noto_emoji_regular/u1F307"; // day
 import { u1F303 } from "react-icons-kit/noto_emoji_regular/u1F303"; // night
-import { u1F4DA } from "react-icons-kit/noto_emoji_regular/u1F4DA";
-import { u1F468 } from "react-icons-kit/noto_emoji_regular/u1F468";
-import { u1F31D } from "react-icons-kit/noto_emoji_regular/u1F31D";
-
-import "./navigation.styles.scss";
 
 const Navigation = ({ time, darkmode }) => {
   return (
-    <nav>
-      <div className="title">
-        <Link to="/">
-          <Icon size={34} icon={time >= 17 || time <= 6 ? u1F303 : u1F307} />
-          <br />
-          <span>Tadas Knieža</span>
+    <header className="flex flex-wrap p-3 md:p-6 md:m-auto md:mb-6 mb-6 md:flex-row items-center w-full justify-between text-center bg-white dark:bg-gray-800 transition-colors">
+      <div className="hover:text-red-400 dark:hover:text-electric-yellow transition-colors">
+        <Link to="/" className="md:flex md:flex-col">
+          <Icon
+            size={38}
+            icon={time >= 17 || time <= 6 ? u1F303 : u1F307}
+            className="pr-1 dark:text-white text-gray-800 hover:text-red-400 dark:hover:text-electric-yellow transition-colors"
+          />
+          <span className="text-2xl font-thin space dark:text-white text-gray-800 hover:text-red-400 dark:hover:text-electric-yellow transition-colors justify-center align-middle">
+            Tadas Knieža
+          </span>
         </Link>
       </div>
-
-      <div className="links">
-        <NavButton to="/about" desc="About Me" icon={u1F468} />
-        <NavButton to="/books" desc="Books" icon={u1F4DA} />
+      <MyPopover toggleColorMode={darkmode} />
+      <div className="text-gray-800 dark:text-white md:flex pr-2 hidden">
+        <Link to="/about" className="p-2">
+          <SiAboutdotme className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow transition-colors" />
+        </Link>
+        <Link to="/books" className="p-2">
+          <FiCodepen className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow transition-colors" />
+        </Link>
         <button
           href="#"
-          className="button"
+          className="p-2"
           aria-label={"Dark Mode"}
           data-tip={"Dark Mode"}
           onClick={darkmode}
         >
-          <Icon size={42} icon={u1F31D} />
+          <FiMoon className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow transition-colors" />
         </button>
       </div>
-
       <Outlet />
-    </nav>
+    </header>
   );
 };
 
