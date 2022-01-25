@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import GitHubButton from "react-github-btn";
+import React from 'react'
+import PropTypes from 'prop-types'
+import GitHubButton from 'react-github-btn'
 
 const Social = ({ github }) => (
-  <div className="social darkmode-ignore">
+  <div className="social">
     {github && (
       <GitHubButton
         href={github.url}
@@ -14,7 +14,7 @@ const Social = ({ github }) => (
       </GitHubButton>
     )}
   </div>
-);
+)
 
 Social.propTypes = {
   github: PropTypes.exact({
@@ -22,6 +22,6 @@ Social.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired
   })
-};
+}
 
-export default Social;
+export default Social

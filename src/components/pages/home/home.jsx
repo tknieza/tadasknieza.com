@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Projects from '../../Projects/projects.component'
-import ProjectsPersonal from '../../ProjectsPersonal/projectsPersonal.component'
-import Slideshow from '../../slideshow/slideshow.component'
-import Social from '../../social/social.component'
+import Projects from '../../Projects/projects'
+import ProjectsPersonal from '../../ProjectsPersonal/projectsPersonal'
+import Slideshow from '../../slideshow/slideshow'
+import Social from '../../social/social'
 
 import './home.styles.scss'
 class Home extends React.Component {

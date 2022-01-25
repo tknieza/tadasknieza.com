@@ -2,14 +2,14 @@ import React from 'react'
 
 import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
 import { Icon } from 'react-icons-kit'
-import Social from '../social/social.component'
+import Social from '../social/social'
 
-import agami from '../../assets/agami.png'
-import flica from '../../assets/flica.svg'
-import kingPixel from '../../assets/kingpixel.svg'
-import selectNote from '../../assets/select-note.svg'
-import tadasknieza from '../../assets/tadasknieza.svg'
-import twitterBird from '../../assets/twitter-bird.svg'
+import agami from '../../agami.png'
+import flica from '../../flica.svg'
+import kingPixel from '../../kingpixel.svg'
+import selectNote from '../../select-note.svg'
+import tadasknieza from '../../tadasknieza.svg'
+import twitterBird from '../../twitter-bird.svg'
 
 import './projects.styles.scss'
 

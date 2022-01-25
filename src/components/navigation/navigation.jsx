@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Outlet, Link } from "react-router-dom";
-import MyPopover from "../popover/popover.component";
-import { FiMoon, FiCodepen } from "react-icons/fi";
-import { SiAboutdotme } from "react-icons/si";
-import { Icon } from "react-icons-kit";
-import { u1F307 } from "react-icons-kit/noto_emoji_regular/u1F307"; // day
-import { u1F303 } from "react-icons-kit/noto_emoji_regular/u1F303"; // night
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Outlet, Link } from 'react-router-dom'
+import MyPopover from '../popover/popover'
+import { FiMoon, FiCodepen } from 'react-icons/fi'
+import { SiAboutdotme } from 'react-icons/si'
+import { Icon } from 'react-icons-kit'
+import { u1F307 } from 'react-icons-kit/noto_emoji_regular/u1F307' // day
+import { u1F303 } from 'react-icons-kit/noto_emoji_regular/u1F303' // night
 
 const Navigation = ({ time, darkmode }) => {
   return (
@@ -34,8 +34,8 @@ const Navigation = ({ time, darkmode }) => {
         <button
           href="#"
           className="p-2"
-          aria-label={"Dark Mode"}
-          data-tip={"Dark Mode"}
+          aria-label={'Dark Mode'}
+          data-tip={'Dark Mode'}
           onClick={darkmode}
         >
           <FiMoon className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow transition-colors" />
@@ -43,12 +43,12 @@ const Navigation = ({ time, darkmode }) => {
       </div>
       <Outlet />
     </header>
-  );
-};
+  )
+}
 
 Navigation.propTypes = {
   time: PropTypes.number.isRequired,
-  darkmode: PropTypes.func.isRequired,
-};
+  darkmode: PropTypes.func.isRequired
+}
 
-export default Navigation;
+export default Navigation

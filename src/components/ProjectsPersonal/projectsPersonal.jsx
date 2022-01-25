@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import { u1F4BE } from "react-icons-kit/noto_emoji_regular/u1F4BE";
-import { Icon } from "react-icons-kit";
-import Social from "../social/social.component";
+import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
+import { Icon } from 'react-icons-kit'
+import Social from '../social/social'
 
-import flica from "../../assets/flica.svg";
-import selectNote from "../../assets/select-note.svg";
+import flica from '../../flica.svg'
+import selectNote from '../../select-note.svg'
 
-import "./projectsPersonal.styles.scss";
+import './projectsPersonal.styles.scss'
 
 const ProjectsPersonal = () => (
   <div className="projects-personal">
@@ -23,9 +23,9 @@ const ProjectsPersonal = () => (
         <div className="card-footer">
           <Social
             github={{
-              url: "https://github.com/tknieza/flica",
-              title: "Source",
-              desc: "Source code for Flica"
+              url: 'https://github.com/tknieza/flica',
+              title: 'Source',
+              desc: 'Source code for Flica'
             }}
           />
           <a
@@ -48,9 +48,9 @@ const ProjectsPersonal = () => (
         <div className="card-footer">
           <Social
             github={{
-              url: "https://github.com/tknieza/select-note",
-              title: "Source",
-              desc: "Source code for Select Note"
+              url: 'https://github.com/tknieza/select-note',
+              title: 'Source',
+              desc: 'Source code for Select Note'
             }}
           />
           <a
@@ -61,10 +61,10 @@ const ProjectsPersonal = () => (
             {<Icon size={42} icon={u1F4BE} />}
           </a>
         </div>
-        <img src={selectNote} alt="Flica" />
+        <img src={selectNote} alt="Select note" />
       </div>
     </div>
   </div>
-);
+)
 
-export default ProjectsPersonal;
+export default ProjectsPersonal

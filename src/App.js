@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
 
-import About from './components/pages/about/about.component'
-import Books from './components/pages/books/books.component'
-import Footer from './components/footer/footer.component'
-import Home from './components/pages/home/home.component'
-import Navigation from './components/navigation/navigation.component'
+import About from './components/pages/about/about'
+import Books from './components/pages/books/books'
+import Footer from './components/footer'
+import Home from './components/pages/home/home'
+import Navigation from './components/navigation/navigation'
 
 const App = () => {
   const [darkMode, toggleDarkMode] = useState(false)
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <Router>
       <div className="app transition-colors">
-        <div className="w-full md:w-4/6 m-auto">
+        <div className="w-full md:w-2/4 m-auto">
           <ReactTooltip />
           <Navigation
             time={new Date().getHours()}
