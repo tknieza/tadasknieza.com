@@ -1,12 +1,10 @@
-import React from "react";
-// import "./footer.styles.scss";
-import netlifyImage from "../../assets/netlify.png";
-import reactImage from "../../assets/react.png";
+import React from 'react'
+import netlifyImage from '../../assets/netlify.png'
+import reactImage from '../../assets/react.png'
 
 const Footer = () => {
   return (
     <footer className="mt-4 mx-4 sm:mx-32">
-      {/* flex flex-col justify-center w-full m-auto mb-6 sm:flex-row sm:justify-between sm:w-8/12 */}
       <div className="container mx-auto pb-4">
         <div className="flex justify-center footer-links">
           <a className="mr-1.5" href="https://github.com/tknieza">
@@ -62,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

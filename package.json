@@ -1,14 +1,16 @@
 {
   "name": "tadasknieza.com",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Tad's website",
+  "keywords": [],
+  "author": "Tadas Knieza<tadasknieza@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@headlessui/react": "^1.4.3",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "darkmode-js": "^1.5.7",
     "immer": ">=9.0.6",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
@@ -24,15 +26,13 @@
     "react-transition-group": "^4.4.2",
     "react-waypoint": "^10.1.0",
     "set-value": ">=4.0.1",
-    "typography": "^0.16.21",
-    "typography-inject-fonts": "0.0.0",
-    "typography-theme-github": "^0.16.19",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "prettier": "prettier -write .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -55,6 +55,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
+    "eslint": "^8.7.0",
+    "eslint-plugin-react": "^7.28.0",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
