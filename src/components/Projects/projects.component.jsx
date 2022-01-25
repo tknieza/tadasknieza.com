@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react'
 
-import { u1F4BE } from "react-icons-kit/noto_emoji_regular/u1F4BE";
-import { Icon } from "react-icons-kit";
-import Social from "../social/social.component";
+import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
+import { Icon } from 'react-icons-kit'
+import Social from '../social/social.component'
 
-import agami from "../../assets/agami.png";
-import flica from "../../assets/flica.svg";
-import kingPixel from "../../assets/kingpixel.svg";
-import selectNote from "../../assets/select-note.svg";
-import tadasknieza from "../../assets/tadasknieza.svg";
-import twitterBird from "../../assets/twitter-bird.svg";
+import agami from '../../assets/agami.png'
+import flica from '../../assets/flica.svg'
+import kingPixel from '../../assets/kingpixel.svg'
+import selectNote from '../../assets/select-note.svg'
+import tadasknieza from '../../assets/tadasknieza.svg'
+import twitterBird from '../../assets/twitter-bird.svg'
 
-import "./projects.styles.scss";
+import './projects.styles.scss'
 
-const Projects = () => {
+function Projects() {
   return (
     <div className="projects">
       <div className="project">
@@ -28,9 +28,9 @@ const Projects = () => {
         <div className="buttons">
           <Social
             github={{
-              url: "https://github.com/tknieza/flica",
-              title: "Source",
-              desc: "Source code for Flica",
+              url: 'https://github.com/tknieza/flica',
+              title: 'Source',
+              desc: 'Source code for Flica'
             }}
           />
           <a
@@ -54,9 +54,9 @@ const Projects = () => {
         <div className="buttons">
           <Social
             github={{
-              url: "https://github.com/tknieza/select-note",
-              title: "Source",
-              desc: "Source code for Select Note",
+              url: 'https://github.com/tknieza/select-note',
+              title: 'Source',
+              desc: 'Source code for Select Note'
             }}
           />
           <a
@@ -75,14 +75,14 @@ const Projects = () => {
         </h2>
         <p>
           Personal website featuring dark mode, prop-typing, SASS support and
-          best practices for React (this website's source code).
+          best practices for React (this website&apos;s source code).
         </p>
         <div className="buttons">
           <Social
             github={{
-              url: "https://github.com/tknieza/tadasknieza.com",
-              title: "Source",
-              desc: "Source code for tadasknieza.com",
+              url: 'https://github.com/tknieza/tadasknieza.com',
+              title: 'Source',
+              desc: 'Source code for tadasknieza.com'
             }}
           />
           <a
@@ -125,9 +125,9 @@ const Projects = () => {
         <div className="buttons">
           <Social
             github={{
-              url: "https://github.com/tknieza/king-pixel",
-              title: "Source",
-              desc: "Source code for King Pixel",
+              url: 'https://github.com/tknieza/king-pixel',
+              title: 'Source',
+              desc: 'Source code for King Pixel'
             }}
           />
           <a
@@ -151,9 +151,9 @@ const Projects = () => {
         <div className="buttons">
           <Social
             github={{
-              url: "https://github.com/tknieza/visual-twitter",
-              title: "Source",
-              desc: "Source code for Visual Twitter",
+              url: 'https://github.com/tknieza/visual-twitter',
+              title: 'Source',
+              desc: 'Source code for Visual Twitter'
             }}
           />
           <a
@@ -166,7 +166,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
