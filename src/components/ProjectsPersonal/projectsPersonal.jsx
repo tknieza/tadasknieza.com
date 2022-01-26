@@ -2,7 +2,7 @@ import React from 'react'
 
 import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
 import { Icon } from 'react-icons-kit'
-import Social from '../social/social'
+import Social from '../social'
 
 import flica from '../../flica.svg'
 import selectNote from '../../select-note.svg'

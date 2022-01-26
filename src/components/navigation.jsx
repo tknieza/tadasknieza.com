@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Outlet, Link } from 'react-router-dom'
-import MyPopover from '../popover/popover'
+import MyPopover from './popover'
 import { FiMoon, FiCodepen } from 'react-icons/fi'
 import { SiAboutdotme } from 'react-icons/si'
 import { Icon } from 'react-icons-kit'

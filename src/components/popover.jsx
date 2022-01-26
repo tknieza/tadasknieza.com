@@ -69,11 +69,11 @@ function MyPopover({ toggleColorMode }) {
                             item.function()
                           }
                         }}
-                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 select-none"
+                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-electric-yellow select-none"
                       >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 md:h-12 md:w-12 bg-orange-100 rounded-lg">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 md:h-12 md:w-12 rounded-lg">
                           <item.icon
-                            className="text-orange-400 w-1/2 h-1/2"
+                            className="w-1/2 h-1/2"
                             aria-hidden="true"
                           />
                         </div>
@@ -91,7 +91,7 @@ function MyPopover({ toggleColorMode }) {
                   <div className="p-4 bg-gray-50 ">
                     <div
                       href="##"
-                      className="flow-root px-2 py-2 rounded-md focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                      className="flow-root px-2 py-2 rounded-md focus:outline-none focus-visible:ring focus-visible:ring-electric-yellow"
                     >
                       <span className="block text-sm text-right font-medium text-gray-900">
                         Built with &#10084; by Tad

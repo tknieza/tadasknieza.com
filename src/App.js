@@ -1,30 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
 
-import About from './components/pages/about/about'
-import Books from './components/pages/books/books'
+import About from './layouts/about'
+import Books from './layouts/books'
+import Home from './layouts/home'
 import Footer from './components/footer'
-import Home from './components/pages/home/home'
-import Navigation from './components/navigation/navigation'
+import Navigation from './components/navigation'
 
 const App = () => {
-  const [darkMode, toggleDarkMode] = useState(false)
+  const [darkMode, toggleDarkMode] = useState(
+    localStorage.theme === 'dark' ||
+      (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+  )
 
   const toggleColorMode = () => {
     toggleDarkMode(!darkMode)
     if (!darkMode) {
-      document.body.classList.add('dark')
+      document.documentElement.classList.add('dark')
+      localStorage.theme = 'dark'
     } else {
-      document.body.classList.remove('dark')
+      document.documentElement.classList.remove('dark')
+      localStorage.theme = 'light'
     }
   }
+
+  useEffect(() => {
+    if (localStorage.theme && localStorage.theme === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [])
 
   return (
     <Router>
       <div className="app transition-colors">
-        <div className="w-full md:w-2/4 m-auto">
-          <ReactTooltip />
+        <div className="w-11/12 md:w-[42rem] m-auto">
+          <ReactTooltip dark={darkMode} />
           <Navigation
             time={new Date().getHours()}
             darkmode={() => toggleColorMode()}

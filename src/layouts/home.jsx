@@ -1,11 +1,10 @@
 import React from 'react'
 
-import Projects from '../../Projects/projects'
-import ProjectsPersonal from '../../ProjectsPersonal/projectsPersonal'
-import Slideshow from '../../slideshow/slideshow'
-import Social from '../../social/social'
+import Projects from '../components/Projects/projects'
+import ProjectsPersonal from '../components/ProjectsPersonal/projectsPersonal'
+import Social from '../components/social'
 
-import './home.styles.scss'
+// import './home.styles.scss'
 class Home extends React.Component {
   constructor() {
     super()
@@ -29,10 +28,10 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="section heading">
+      <div className="text-gray-800 dark:text-white">
+        <div className="flex">
           <div>
-            <h1>Hi, I&apos;m Tadas</h1>
+            <h1 className="text-2xl">Hi, I&apos;m Tadas</h1>
             <p>
               I build open-source web applications and spend time in modern
               JavaScript, design & Java development.
@@ -45,10 +44,7 @@ class Home extends React.Component {
               }}
             />
           </div>
-          <Slideshow
-            className="slideshow"
-            currentImageIndex={this.state.image}
-          />
+          <div>Placeholder</div>
         </div>
 
         <div className="section">
