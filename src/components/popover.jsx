@@ -36,10 +36,10 @@ function MyPopover({ toggleColorMode }) {
               className={`
                 ${
                   open
-                    ? 'dark:border-gray-300'
-                    : 'text-opacity-50 dark:border-gray-700'
+                    ? 'dark:border-white'
+                    : 'text-opacity-50 dark:border-black'
                 }
-                text-white group border-gray-800 bg-gray-800 border-2 dark:bg-gray-800 px-3 py-2 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition-colors`}
+                text-white group border-black bg-brblack border-2 px-3 py-2 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition-colors`}
             >
               <FiMenu
                 className={`${
@@ -59,7 +59,7 @@ function MyPopover({ toggleColorMode }) {
             >
               <Popover.Panel className="absolute z-10 w-screen max-w-xs px-4 mt-3 transform -translate-x-drop-down translate-y-2 md:px-0 lg:max-w-2xl">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div className="relative grid gap-8 bg-white p-6 lg:grid-cols-2">
+                  <div className="relative grid gap-8 bg-gray-50 p-6 lg:grid-cols-2">
                     {solutions.map(item => (
                       <Link
                         key={item.name}
@@ -69,16 +69,16 @@ function MyPopover({ toggleColorMode }) {
                             item.function()
                           }
                         }}
-                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-electric-yellow select-none"
+                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-electric-yellow select-none"
                       >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 md:h-12 md:w-12 rounded-lg">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-brblack md:h-12 md:w-12 rounded-lg">
                           <item.icon
                             className="w-1/2 h-1/2"
                             aria-hidden="true"
                           />
                         </div>
                         <div className="ml-4">
-                          <p className="text-sm font-medium text-gray-900">
+                          <p className="text-sm font-medium text-brblack">
                             {item.name}
                           </p>
                           <p className="text-sm text-gray-500">
@@ -88,12 +88,12 @@ function MyPopover({ toggleColorMode }) {
                       </Link>
                     ))}
                   </div>
-                  <div className="p-4 bg-gray-50 ">
+                  <div className="p-4 bg-gray-100">
                     <div
                       href="##"
                       className="flow-root px-2 py-2 rounded-md focus:outline-none focus-visible:ring focus-visible:ring-electric-yellow"
                     >
-                      <span className="block text-sm text-right font-medium text-gray-900">
+                      <span className="block text-sm text-right font-medium text-brblack">
                         Built with &#10084; by Tad
                       </span>
                       <span className="block text-sm text-right text-gray-500">

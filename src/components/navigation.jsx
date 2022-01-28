@@ -10,21 +10,21 @@ import { u1F303 } from 'react-icons-kit/noto_emoji_regular/u1F303' // night
 
 const Navigation = ({ time, darkmode }) => {
   return (
-    <header className="flex flex-wrap p-3 md:p-6 md:m-auto md:mb-6 mb-6 md:flex-row items-center w-full justify-between text-center bg-white dark:bg-gray-800 transition-colors">
+    <header className="flex flex-wrap p-3 md:p-6 md:m-auto md:mb-6 mb-6 md:flex-row items-center w-full justify-between text-center bg-white dark:bg-brblack transition-colors">
       <div className="hover:text-red-400 dark:hover:text-electric-yellow transition-colors">
         <Link to="/" className="md:flex md:flex-col">
           <Icon
             size={38}
             icon={time >= 17 || time <= 6 ? u1F303 : u1F307}
-            className="pr-1 dark:text-white text-gray-800 hover:text-red-400 dark:hover:text-electric-yellow transition-colors"
+            className="pr-1 dark:text-white text-brblack hover:text-red-400 dark:hover:text-electric-yellow transition-colors"
           />
-          <span className="text-2xl font-thin space dark:text-white text-gray-800 hover:text-red-400 dark:hover:text-electric-yellow transition-colors justify-center align-middle">
+          <span className="text-2xl font-thin space dark:text-white text-brblack hover:text-red-400 dark:hover:text-electric-yellow transition-colors justify-center align-middle">
             Tadas Knieža
           </span>
         </Link>
       </div>
       <MyPopover toggleColorMode={darkmode} />
-      <div className="text-gray-800 dark:text-white md:flex pr-2 hidden">
+      <div className="text-brblack dark:text-white md:flex pr-2 hidden">
         <Link to="/about" className="p-2">
           <SiAboutdotme className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow transition-colors" />
         </Link>

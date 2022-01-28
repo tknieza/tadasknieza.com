@@ -4,6 +4,6 @@
 
 @layer base {
   div#root {
-    @apply bg-white dark:bg-gray-800 transition-colors;
+    @apply bg-white dark:bg-brblack transition-colors;
   }
 }

@@ -28,7 +28,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="text-gray-800 dark:text-white">
+      <div className="text-brblack dark:text-white">
         <div className="flex">
           <div>
             <h1 className="text-2xl">Hi, I&apos;m Tadas</h1>
