@@ -46,12 +46,11 @@ const App = () => {
             darkmode={() => toggleColorMode()}
           />
           <VoxelArt />
-          {/* text-white group border-gray-800 bg-gray-800 border-2 dark:bg-gray-800 px-3 py-2 rounded-md */}
           <div className="flex">
             <div className="bg-gray-50 dark:bg-brblack inline-flex items-center m-auto leading-none rounded-md p-2 shadow text-teal text-sm ">
-              <span className="inline-flex px-2 text-pink-600">
+              <span className="inline-block align-middle px-2 text-pink-600">
                 Im a{' '}
-                <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center">
+                <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 mx-1 justify-center items-center">
                   software engineer
                 </span>{' '}
                 based in the United Kingdom

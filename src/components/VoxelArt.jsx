@@ -7,22 +7,16 @@ import loadGLTFModel from '../lib/Model'
 // eslint-disable-next-line no-unused-vars
 import { Spinner, ModelContainer } from './VoxelArtLoader'
 
-// function easeOutCirc(x) {
-//   return Math.sqrt(1 - Math.pow(x - 1, 4))
-// }
-
 const VoxelDog = () => {
   const refContainer = useRef()
   // eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
-  // eslint-disable-next-line no-unused-vars
-  const [_camera, setCamera] = useState()
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const initialCameraPosition = new THREE.Vector3(
-    20 * Math.sin(10 * Math.PI),
-    8,
-    15 * Math.cos(10 * Math.PI)
+    20 * Math.sin(3 * Math.PI),
+    5,
+    15 * Math.cos(3 * Math.PI)
   )
   const [scene] = useState(new THREE.Scene())
 
@@ -47,20 +41,25 @@ const VoxelDog = () => {
         antialias: true,
         alpha: true
       })
-      renderer.setPixelRatio(window.devicePixelRatio)
+
       renderer.setSize(screenWidth, screenHeight)
+      renderer.setPixelRatio(window.devicePixelRatio)
       renderer.outputEncoding = THREE.sRGBEncoding
+
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
-      const scale = screenHeight * 0.004
-      const camera = new THREE.PerspectiveCamera(35, scale, 0.01)
+      const camera = new THREE.PerspectiveCamera(
+        35,
+        screenWidth / screenHeight,
+        1,
+        1000
+      )
 
-      camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
-      setCamera(camera)
+      camera.position.copy(initialCameraPosition)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      const ambientLight = new THREE.AmbientLight(0x404040, 3)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
