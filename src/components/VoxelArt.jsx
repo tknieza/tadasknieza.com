@@ -3,13 +3,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import loadGLTFModel from '../lib/Model'
-// eslint-disable-next-line no-unused-vars
-import { Spinner, ModelContainer } from './VoxelArtLoader'
+import loadGLTFModel from 'lib/Model'
+import { Spinner, ModelContainer } from 'components/VoxelArtLoader'
 
-const VoxelDog = () => {
+const VoxelArt = () => {
   const refContainer = useRef()
-  // eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
@@ -98,4 +96,4 @@ const VoxelDog = () => {
   )
 }
 
-export default VoxelDog
+export default VoxelArt

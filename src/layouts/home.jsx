@@ -1,10 +1,12 @@
 import React from 'react'
 
-import Projects from '../components/Projects/projects'
-import ProjectsPersonal from '../components/ProjectsPersonal/projectsPersonal'
-import Social from '../components/social'
+import Projects from 'components/Projects/projects'
+import ProjectsPersonal from 'components/ProjectsPersonal/projectsPersonal'
+import Social from 'components/social'
+import VoxelArt from 'components/VoxelArt'
+import profilePhoto from 'agami.png'
+// import 'layouts/home.styles.scss'
 
-// import './home.styles.scss'
 class Home extends React.Component {
   constructor() {
     super()
@@ -29,9 +31,21 @@ class Home extends React.Component {
   render() {
     return (
       <div className="text-brblack dark:text-white">
+        <VoxelArt />
+        {/* <div className="flex">
+          <div className="bg-gray-50 dark:bg-brblack inline-flex items-center m-auto leading-none rounded-md p-2 shadow text-teal text-sm ">
+            <span className="inline-block align-middle px-2 text-pink-600">
+              Im a{' '}
+              <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 mx-1 justify-center items-center">
+                software engineer
+              </span>{' '}
+              based in the United Kingdom
+            </span>
+          </div>
+        </div> */}
         <div className="flex">
           <div>
-            <h1 className="text-2xl">Hi, I&apos;m Tadas</h1>
+            <h1 className="text-2xl">Hi, I&apos;m Tad!</h1>
             <p>
               I build open-source web applications and spend time in modern
               JavaScript, design & Java development.
@@ -44,7 +58,15 @@ class Home extends React.Component {
               }}
             />
           </div>
-          <div>Placeholder</div>
+          <div>
+            <a href="#" className="block relative">
+              <img
+                src={profilePhoto}
+                alt="profile"
+                className="mx-auto object-cover rounded-full h-16 w-16 p-2"
+              />
+            </a>
+          </div>
         </div>
 
         <div className="section">

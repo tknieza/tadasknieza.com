@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-undef
-const colors = require('tailwindcss/colors')
 module.exports = {
   important: true,
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -22,6 +20,9 @@ module.exports = {
         bryellow: '#657b83',
         brblue: '#839496',
         brcyan: '#93a1a1'
+      },
+      backgroundImage: {
+        'tknieza-background': "url('/src/bg.svg')"
       }
     }
   },

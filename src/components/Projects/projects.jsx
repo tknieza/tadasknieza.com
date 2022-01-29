@@ -2,16 +2,16 @@ import React from 'react'
 
 import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
 import { Icon } from 'react-icons-kit'
-import Social from '../social'
+import Social from 'components/social'
 
-import agami from '../../agami.png'
-import flica from '../../flica.svg'
-import kingPixel from '../../kingpixel.svg'
-import selectNote from '../../select-note.svg'
-import tadasknieza from '../../tadasknieza.svg'
-import twitterBird from '../../twitter-bird.svg'
+import agami from 'agami.png'
+import flica from 'flica.svg'
+import kingPixel from 'kingpixel.svg'
+import selectNote from 'select-note.svg'
+import tadasknieza from 'tadasknieza.svg'
+import twitterBird from 'twitter-bird.svg'
 
-import './projects.styles.scss'
+import 'components/Projects/projects.styles.scss'
 
 function Projects() {
   return (

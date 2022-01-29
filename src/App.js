@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
 
-// import About from './layouts/about'
-// import Books from './layouts/books'
-// import Home from './layouts/home'
-import Footer from './components/footer'
-import Navigation from './components/navigation'
-import VoxelArt from './components/VoxelArt'
+// import About from 'layouts/about'
+// import Books from 'layouts/books'
+import Home from 'layouts/home'
+import Footer from 'components/footer'
+import Navigation from 'components/navigation'
 
 const App = () => {
   const [darkMode, toggleDarkMode] = useState(
@@ -45,20 +43,8 @@ const App = () => {
             time={new Date().getHours()}
             darkmode={() => toggleColorMode()}
           />
-          <VoxelArt />
-          <div className="flex">
-            <div className="bg-gray-50 dark:bg-brblack inline-flex items-center m-auto leading-none rounded-md p-2 shadow text-teal text-sm ">
-              <span className="inline-block align-middle px-2 text-pink-600">
-                Im a{' '}
-                <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 mx-1 justify-center items-center">
-                  software engineer
-                </span>{' '}
-                based in the United Kingdom
-              </span>
-            </div>
-          </div>
 
-          {/* <Routes>
+          <Routes>
             <Route
               exact
               path="/"
@@ -68,9 +54,9 @@ const App = () => {
                 </div>
               }
             ></Route>
-            <Route path="/about" element={<About />} />
-            <Route path="/books" element={<Books />} />
-          </Routes> */}
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/books" element={<Books />} /> */}
+          </Routes>
           <Footer />
         </div>
       </div>
