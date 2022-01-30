@@ -45,7 +45,7 @@ class Home extends React.Component {
         </div> */}
         <div className="flex">
           <div className="">
-            <h1 className="text-4xl font-bold">Hi, I&apos;m Tad!</h1>
+            <h1 className="text-3xl font-bold">Hi, I&apos;m Tad!</h1>
             <p>
               I build open-source web applications and spend time in modern
               JavaScript, design & Java development.
@@ -68,6 +68,7 @@ class Home extends React.Component {
               url: 'https://github.com/tknieza',
               title: 'Follow',
               desc: 'tknieza'
+
             }}
           /> */}
           <ProjectsPersonal />

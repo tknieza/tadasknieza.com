@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
-
 import About from 'layouts/about'
 import Books from 'layouts/books'
 import Home from 'layouts/home'
@@ -27,10 +26,21 @@ const App = () => {
   }
 
   useEffect(() => {
-    if (localStorage.theme && localStorage.theme === 'dark') {
-      document.documentElement.classList.add('dark')
+    if (localStorage.theme === undefined) {
+      document.documentElement.classList.add(
+        window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : ''
+      )
     } else {
-      document.documentElement.classList.remove('dark')
+      if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark')
+        toggleDarkMode(true)
+      } else {
+        document.documentElement.classList.remove('dark')
+        toggleDarkMode(false)
+      }
     }
   }, [])
 
