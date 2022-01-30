@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
 
-// import About from 'layouts/about'
-// import Books from 'layouts/books'
+import About from 'layouts/about'
+import Books from 'layouts/books'
 import Home from 'layouts/home'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
@@ -36,8 +36,8 @@ const App = () => {
 
   return (
     <Router>
-      <div className="app selection:bg-electric-yellow selection:text-brblack transition-colors">
-        <div className="w-11/12 md:w-[42rem] m-auto">
+      <div className="app selection:bg-red-400 dark:selection:bg-electric-yellow selection:text-brblack transition-colors">
+        <div className="w-11/12 md:w-[36rem] m-auto">
           <ReactTooltip dark={darkMode} />
           <Navigation
             time={new Date().getHours()}
@@ -54,9 +54,10 @@ const App = () => {
                 </div>
               }
             ></Route>
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/books" element={<Books />} /> */}
+            <Route path="/about" element={<About />} />
+            <Route path="/books" element={<Books />} />
           </Routes>
+
           <Footer />
         </div>
       </div>

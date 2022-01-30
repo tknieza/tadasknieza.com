@@ -10,7 +10,7 @@ import { u1F303 } from 'react-icons-kit/noto_emoji_regular/u1F303' // night
 
 const Navigation = ({ time, darkmode }) => {
   return (
-    <header className="flex flex-wrap p-3 md:p-6 md:m-auto md:mb-6 mb-6 md:flex-row items-center w-full justify-between text-center bg-white dark:bg-brblack transition-colors">
+    <header className="flex flex-wrap pt-3 md:pt-6 md:m-auto mb-6 md:flex-row items-center w-full justify-between text-center transition-colors">
       <div className="hover:text-red-400 dark:hover:text-electric-yellow transition-colors">
         <Link to="/" className="md:flex md:flex-col">
           <Icon

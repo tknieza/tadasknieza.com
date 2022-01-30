@@ -2,9 +2,9 @@ import React from 'react'
 
 import Projects from 'components/Projects/projects'
 import ProjectsPersonal from 'components/ProjectsPersonal/projectsPersonal'
-import Social from 'components/social'
+// import Social from 'components/social'
 import VoxelArt from 'components/VoxelArt'
-import profilePhoto from 'agami.png'
+import profilePhoto from 'assets/photo-50.jpg'
 // import 'layouts/home.styles.scss'
 
 class Home extends React.Component {
@@ -44,32 +44,32 @@ class Home extends React.Component {
           </div>
         </div> */}
         <div className="flex">
-          <div>
-            <h1 className="text-2xl">Hi, I&apos;m Tad!</h1>
+          <div className="">
+            <h1 className="text-4xl font-bold">Hi, I&apos;m Tad!</h1>
             <p>
               I build open-source web applications and spend time in modern
               JavaScript, design & Java development.
             </p>
-            <Social
-              github={{
-                url: 'https://github.com/tknieza',
-                title: 'Follow',
-                desc: 'Follow @tknieza on GitHub'
-              }}
-            />
           </div>
-          <div>
+          <div className="shrink min-w-fit">
             <a href="#" className="block relative">
               <img
                 src={profilePhoto}
                 alt="profile"
-                className="mx-auto object-cover rounded-full h-16 w-16 p-2"
+                className="mx-auto object-cover rounded-full h-28 w-28 border-2 border-white"
               />
             </a>
           </div>
         </div>
 
         <div className="section">
+          {/* <Social
+            github={{
+              url: 'https://github.com/tknieza',
+              title: 'Follow',
+              desc: 'tknieza'
+            }}
+          /> */}
           <ProjectsPersonal />
         </div>
 

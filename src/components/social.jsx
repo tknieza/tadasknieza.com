@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import GitHubButton from 'react-github-btn'
+import { BsGithub } from 'react-icons/bs'
 
 const Social = ({ github }) => (
-  <div className="social">
+  <div className="">
     {github && (
-      <GitHubButton
+      <a
+        type="button"
         href={github.url}
-        data-size="large"
-        aria-label={github.desc}
+        className="py-2 px-5 flex justify-center items-center bg-white hover:bg-brblack dark:bg-brblack dark:hover:bg-white hover:text-white dark:hover:text-brblack focus:ring-gray-500 focus:ring-offset-gray-200 text-brblack dark:text-white w-fit transition-colors ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
       >
-        {github.title}
-      </GitHubButton>
+        <BsGithub className="mr-2 w-5 h-5" />
+        {`@${github.desc}`}
+      </a>
     )}
   </div>
 )

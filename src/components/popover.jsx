@@ -39,12 +39,12 @@ function MyPopover({ toggleColorMode }) {
                     ? 'dark:border-white'
                     : 'text-opacity-50 dark:border-black'
                 }
-                text-white group border-black bg-brblack border-2 px-3 py-2 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition-colors`}
+                text-gray-50 group border-black border-2 px-3 py-2 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 transition-colors`}
             >
               <FiMenu
                 className={`${
                   open ? '' : 'text-opacity-70'
-                } h-5 w-5 group-hover:text-opacity-80 transition ease-in-out duration-150`}
+                } h-5 w-5 group-hover:text-opacity-90 transition ease-in-out duration-150`}
                 aria-hidden="true"
               />
             </Popover.Button>
