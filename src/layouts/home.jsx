@@ -47,20 +47,18 @@ class Home extends React.Component {
         <div className="md:flex">
           <div className="">
             <h1 className="text-3xl font-bold">Hi, I&apos;m Tad!</h1>
-            <p className=" pr-8">
+            <p className="text-justify md:text-left md:pr-8">
               Junior software developer and computer science graduate based in
               the United Kingdom with industry experience developing performant
-              web solutions.
+              and exciting web solutions.
             </p>
             <div className="flex justify-center pt-2">
               <LinkButton
-                className=""
                 url="https://github.com/tknieza"
                 title="@tknieza"
                 Icon={BsGithub}
               />
               <LinkButton
-                className=""
                 url="https://www.linkedin.com/in/tadas-knieza/"
                 title="@tadas-knieza"
                 Icon={BsLinkedin}
@@ -78,11 +76,12 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="section">
-          <ProjectsPersonal />
-        </div>
+        {/* Rough structure of remaining components for homepage */}
+        <h1 className="py-12">Bio</h1>
+        <ProjectsPersonal />
+        <h1 className="py-12">Other things I do</h1>
 
-        <div className="section">
+        <div>
           <h2>Open-Source Projects</h2>
           <Projects />
         </div>
