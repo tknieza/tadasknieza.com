@@ -2,10 +2,11 @@ import React from 'react'
 
 import Projects from 'components/Projects/projects'
 import ProjectsPersonal from 'components/ProjectsPersonal/projectsPersonal'
-// import Social from 'components/social'
+import LinkButton from 'components/LinkButton'
 import VoxelArt from 'components/VoxelArt'
 import profilePhoto from 'assets/photo-50.jpg'
 // import 'layouts/home.styles.scss'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
 class Home extends React.Component {
   constructor() {
@@ -43,15 +44,30 @@ class Home extends React.Component {
             </span>
           </div>
         </div> */}
-        <div className="flex">
+        <div className="md:flex">
           <div className="">
             <h1 className="text-3xl font-bold">Hi, I&apos;m Tad!</h1>
-            <p>
-              I build open-source web applications and spend time in modern
-              JavaScript, design & Java development.
+            <p className=" pr-8">
+              Junior software developer and computer science graduate based in
+              the United Kingdom with industry experience developing performant
+              web solutions.
             </p>
+            <div className="flex justify-center pt-2">
+              <LinkButton
+                className=""
+                url="https://github.com/tknieza"
+                title="@tknieza"
+                Icon={BsGithub}
+              />
+              <LinkButton
+                className=""
+                url="https://www.linkedin.com/in/tadas-knieza/"
+                title="@tadas-knieza"
+                Icon={BsLinkedin}
+              />
+            </div>
           </div>
-          <div className="shrink min-w-fit">
+          <div className="shrink min-w-fit pt-4">
             <a href="#" className="block relative">
               <img
                 src={profilePhoto}
@@ -63,14 +79,6 @@ class Home extends React.Component {
         </div>
 
         <div className="section">
-          {/* <Social
-            github={{
-              url: 'https://github.com/tknieza',
-              title: 'Follow',
-              desc: 'tknieza'
-
-            }}
-          /> */}
           <ProjectsPersonal />
         </div>
 

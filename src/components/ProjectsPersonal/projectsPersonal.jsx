@@ -2,12 +2,13 @@ import React from 'react'
 
 import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
 import { Icon } from 'react-icons-kit'
-import Social from 'components/social'
+import LinkButton from 'components/LinkButton'
 
 import flica from 'flica.svg'
 import selectNote from 'select-note.svg'
 
-import './projectsPersonal.styles.scss'
+import 'components/ProjectsPersonal/projectsPersonal.styles.scss'
+import { BsGithub } from 'react-icons/bs'
 
 const ProjectsPersonal = () => (
   <div className="projects-personal">
@@ -21,12 +22,10 @@ const ProjectsPersonal = () => (
           ratio.
         </p>
         <div className="card-footer">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/flica',
-              title: 'Source',
-              desc: 'Source code for Flica'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/flica"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://sleepy-joliot-a28cc4.netlify.com"
@@ -46,12 +45,10 @@ const ProjectsPersonal = () => (
           and start making notes hassle-free!
         </p>
         <div className="card-footer">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/select-note',
-              title: 'Source',
-              desc: 'Source code for Select Note'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/select-note"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://sharp-brahmagupta-cd3ffa.netlify.com/"

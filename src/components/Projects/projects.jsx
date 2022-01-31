@@ -2,7 +2,7 @@ import React from 'react'
 
 import { u1F4BE } from 'react-icons-kit/noto_emoji_regular/u1F4BE'
 import { Icon } from 'react-icons-kit'
-import Social from 'components/social'
+import LinkButton from 'components/LinkButton'
 
 import agami from 'agami.png'
 import flica from 'flica.svg'
@@ -12,6 +12,7 @@ import tadasknieza from 'tadasknieza.svg'
 import twitterBird from 'twitter-bird.svg'
 
 import 'components/Projects/projects.styles.scss'
+import { BsGithub } from 'react-icons/bs'
 
 function Projects() {
   return (
@@ -26,12 +27,10 @@ function Projects() {
           Semantic UI principles.
         </p>
         <div className="buttons">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/flica',
-              title: 'Source',
-              desc: 'Source code for Flica'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/flica"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://sleepy-joliot-a28cc4.netlify.com"
@@ -52,12 +51,10 @@ function Projects() {
           routing & more.
         </p>
         <div className="buttons">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/select-note',
-              title: 'Source',
-              desc: 'Source code for Select Note'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/select-note"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://sharp-brahmagupta-cd3ffa.netlify.com/"
@@ -78,12 +75,10 @@ function Projects() {
           best practices for React (this website&apos;s source code).
         </p>
         <div className="buttons">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/tadasknieza.com',
-              title: 'Source',
-              desc: 'Source code for tadasknieza.com'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/tadasknieza.com"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://tadasknieza.com"
@@ -123,12 +118,10 @@ function Projects() {
           design, player systems, game states.
         </p>
         <div className="buttons">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/king-pixel',
-              title: 'Source',
-              desc: 'Source code for King Pixel'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/king-pixel"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://gamejolt.com/games/kingpixel/250736"
@@ -149,12 +142,10 @@ function Projects() {
           Twitter by specifying keywords.
         </p>
         <div className="buttons">
-          <Social
-            github={{
-              url: 'https://github.com/tknieza/visual-twitter',
-              title: 'Source',
-              desc: 'Source code for Visual Twitter'
-            }}
+          <LinkButton
+            url="https://github.com/tknieza/visual-twitter"
+            title="Source"
+            Icon={BsGithub}
           />
           <a
             href="https://github.com/tknieza/visual-twitter"

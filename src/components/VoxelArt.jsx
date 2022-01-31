@@ -1,4 +1,4 @@
-// // "Voxel Web Development" (https://skfb.ly/opvLV) by Diego G. is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+// "Voxel Web Development" (https://skfb.ly/opvLV) by Diego G. is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'

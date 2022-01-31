@@ -1,7 +1,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { FiMenu, FiMoon, FiCodepen } from 'react-icons/fi'
 import { SiAboutdotme } from 'react-icons/si'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
@@ -58,7 +58,7 @@ function MyPopover({ toggleColorMode }) {
                     {solutions.map(item => (
                       <Link
                         key={item.name}
-                        to={item.href ? item.href : ''}
+                        to={item.href ? item.href : useLocation().pathname}
                         onClick={() => {
                           if (item.function) {
                             item.function()

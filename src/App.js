@@ -4,8 +4,8 @@ import ReactTooltip from 'react-tooltip'
 import About from 'layouts/about'
 import Books from 'layouts/books'
 import Home from 'layouts/home'
-import Footer from 'components/footer'
-import Navigation from 'components/navigation'
+import Footer from 'components/Footer'
+import Navigation from 'components/Navigation'
 
 const App = () => {
   const [darkMode, toggleDarkMode] = useState(
