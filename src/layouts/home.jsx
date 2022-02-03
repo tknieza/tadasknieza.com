@@ -1,11 +1,10 @@
 import React from 'react'
 
 import Projects from 'components/Projects/projects'
-import ProjectsPersonal from 'components/ProjectsPersonal/projectsPersonal'
+import ProjectsPersonal from 'components/Highlights'
 import LinkButton from 'components/LinkButton'
 import VoxelArt from 'components/VoxelArt'
-import profilePhoto from 'assets/photo-50.jpg'
-// import 'layouts/home.styles.scss'
+import profilePhoto from 'assets/images/photo-50.jpg'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
 class Home extends React.Component {
@@ -33,21 +32,10 @@ class Home extends React.Component {
     return (
       <div className="text-brblack dark:text-white">
         <VoxelArt />
-        {/* <div className="flex">
-          <div className="bg-gray-50 dark:bg-brblack inline-flex items-center m-auto leading-none rounded-md p-2 shadow text-teal text-sm ">
-            <span className="inline-block align-middle px-2 text-pink-600">
-              Im a{' '}
-              <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 mx-1 justify-center items-center">
-                software engineer
-              </span>{' '}
-              based in the United Kingdom
-            </span>
-          </div>
-        </div> */}
         <div className="md:flex">
           <div className="">
-            <h1 className="text-3xl font-bold">Hi, I&apos;m Tad!</h1>
-            <p className="text-justify md:text-left md:pr-8">
+            <h1 className="text-3xl font-bold pb-1">Hi, I&apos;m Tad!</h1>
+            <p className="text-justify md:text-left md:pr-8 font-blackbird tracking-wide">
               Junior software developer and computer science graduate based in
               the United Kingdom with industry experience developing performant
               and exciting web solutions.
@@ -75,10 +63,21 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
+        <ProjectsPersonal />
 
         {/* Rough structure of remaining components for homepage */}
-        <h1 className="py-12">Bio</h1>
-        <ProjectsPersonal />
+        <div>
+          <h1 className="text-2xl font-bold pt-8 pb-4">
+            Bio
+            <span className="font-extrabold pl-1">_</span>
+          </h1>
+          <div>
+            <p>
+              <span className="pr-2 font-bold">1999</span>Born in Klaipėda,
+              Lithuania
+            </p>
+          </div>
+        </div>
         <h1 className="py-12">Other things I do</h1>
 
         <div>

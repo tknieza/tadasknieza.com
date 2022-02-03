@@ -24,6 +24,9 @@ module.exports = {
       },
       backgroundImage: {
         'tknieza-background': "url('/src/bg.svg')"
+      },
+      fontFamily: {
+        blackbird: ['Project Blackbird']
       }
     }
   },
