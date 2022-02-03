@@ -5,7 +5,7 @@ import reactImage from 'react.png'
 const Footer = () => {
   return (
     <footer className="text-center items-center md:flex md:justify-between text-brblack dark:text-white mt-4 pb-4">
-      <div className="">
+      <div>
         <a className="p-1" href="https://github.com/tknieza">
           Github
         </a>

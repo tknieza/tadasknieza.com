@@ -46,7 +46,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="app selection:bg-red-400 dark:selection:bg-electric-yellow selection:text-brblack transition-colors">
+      <div className="selection:bg-red-400 dark:selection:bg-electric-yellow selection:text-brblack transition-colors">
         <div className="w-11/12 md:w-[36rem] m-auto">
           <ReactTooltip dark={darkMode} />
           <Navigation
@@ -59,7 +59,7 @@ const App = () => {
               exact
               path="/"
               element={
-                <div className="homepage">
+                <div>
                   <Home />
                 </div>
               }

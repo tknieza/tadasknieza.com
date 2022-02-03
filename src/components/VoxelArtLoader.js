@@ -9,7 +9,7 @@ export const Spinner = () => (
 
 // eslint-disable-next-line react/prop-types
 export const ModelContainer = forwardRef(({ children }, ref) => (
-  <div ref={ref} className="model h-60 md:h-96 m-auto mt-9 mb-18 relative">
+  <div ref={ref} className="model h-72 m-auto mt-9 mb-18 relative">
     {children}
   </div>
 ))

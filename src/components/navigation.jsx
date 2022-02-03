@@ -10,7 +10,7 @@ import { u1F303 } from 'react-icons-kit/noto_emoji_regular/u1F303' // night
 
 const Navigation = ({ time, darkmode }) => {
   return (
-    <header className="flex flex-wrap pt-3 md:pt-6 md:m-auto mb-6 md:flex-row items-center w-full justify-between text-center transition-colors">
+    <header className="flex flex-wrap pt-3 md:pt-6 items-center w-full justify-between text-center transition-colors">
       <Link
         to="/"
         className="md:flex md:flex-col text-2xl font-thin group dark:text-white text-brblack hover:text-red-400 dark:hover:text-electric-yellow"
@@ -24,10 +24,20 @@ const Navigation = ({ time, darkmode }) => {
       </Link>
       <MyPopover toggleColorMode={darkmode} />
       <div className="text-brblack dark:text-white md:flex pr-2 hidden">
-        <Link to="/about" className="p-2">
+        <Link
+          to="/about"
+          className="p-2"
+          aria-label={'About'}
+          data-tip={'About'}
+        >
           <SiAboutdotme className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow" />
         </Link>
-        <Link to="/books" className="p-2">
+        <Link
+          to="/books"
+          className="p-2"
+          aria-label={'Books'}
+          data-tip={'Books'}
+        >
           <FiCodepen className="text-3xl hover:text-red-400 dark:hover:text-electric-yellow" />
         </Link>
         <button
