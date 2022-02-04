@@ -13,7 +13,7 @@ const books = [
   },
   {
     author: 'Steven McConnell',
-    name: 'Code Complete: A Practical Handbook of Software Construction',
+    name: 'Code Complete: Practical Handbook of Software Construction',
     year: '2004'
   },
   {
@@ -22,8 +22,8 @@ const books = [
     year: '2011'
   },
   {
-    author: 'Andrew Hunt/David Thomas',
-    name: 'The Pragmatic Programmer',
+    author: 'Andrew Hunt & David Thomas',
+    name: 'The Pragmatic Programmer: From Journeyman to Master',
     year: '2000'
   },
   {
@@ -50,21 +50,31 @@ const books = [
 
 function Books() {
   return (
-    <div className="text-brblack dark:text-white">
-      <h1 className="text-2xl font-bold pt-8 pb-3">
-        Book Recommendations
-        <span className="font-extrabold pl-1">_</span>
-      </h1>
-      <ul className="font-blackbird">
-        {books.map(item => (
-          <li key={item.name} className="flex justify-between">
-            <span className="w-56">{item.author}</span>
-            <p className="text-right">
-              {item.name}, {item.year}
-            </p>
-          </li>
-        ))}
-      </ul>
+    <div>
+      <div className="pt-2">
+        <div className="py-2 px-8 items-center justify-center dark:bg-white bg-brblack text-white dark:text-brblack transition-colors text-center text-base rounded-lg w-fit m-auto">
+          <p className="font-semibold">
+            “An investment in knowledge always pays the best interest.”
+          </p>
+          <p className="text-sm">
+            ― Andrew Hunt, The Pragmatic Programmer: From Journeyman to Master
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1 className="text-2xl font-bold pt-8 pb-3">
+          Book Recommendations
+          <span className="font-extrabold pl-1">_</span>
+        </h1>
+        <ul className="font-blackbird">
+          {books.map(item => (
+            <li key={item.name} className="flex justify-between">
+              <span className="w-48">{item.author}</span>
+              <p className="text-right">{item.name}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
