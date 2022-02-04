@@ -3,7 +3,6 @@ import React from 'react'
 import Projects from 'components/Projects/projects'
 import ProjectsPersonal from 'components/Highlights'
 import LinkButton from 'components/LinkButton'
-import VoxelArt from 'components/VoxelArt'
 import profilePhoto from 'assets/images/photo-50.jpg'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
@@ -31,10 +30,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className="text-brblack dark:text-white">
-        <VoxelArt />
         <div className="md:flex">
           <div className="">
-            <h1 className="text-3xl font-bold pb-1">Hi, I&apos;m Tad!</h1>
+            <h1 className="text-2xl font-bold pb-1">Hi, I&apos;m Tad!</h1>
             <p className="text-justify md:text-left md:pr-8 font-blackbird tracking-wide">
               Junior software developer and computer science graduate based in
               the United Kingdom with industry experience developing performant

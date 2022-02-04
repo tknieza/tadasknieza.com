@@ -6,6 +6,7 @@ import Books from 'layouts/books'
 import Home from 'layouts/home'
 import Footer from 'components/Footer'
 import Navigation from 'components/Navigation'
+import VoxelArt from 'components/VoxelArt'
 
 const App = () => {
   const [darkMode, toggleDarkMode] = useState(
@@ -53,7 +54,7 @@ const App = () => {
             time={new Date().getHours()}
             darkmode={() => toggleColorMode()}
           />
-
+          <VoxelArt />
           <Routes>
             <Route
               exact
