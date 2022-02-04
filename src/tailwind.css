@@ -9,6 +9,6 @@
   }
 
   div#root {
-    @apply bg-white dark:bg-brblack md:bg-tknieza-background md:bg-contain md:bg-center md:bg-no-repeat transition-colors;
+    @apply bg-white dark:bg-brblack text-brblack dark:text-white md:bg-tknieza-background md:bg-contain md:bg-center md:bg-no-repeat transition-colors;
   }
 }
