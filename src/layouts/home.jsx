@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Projects from 'components/Projects/projects'
+import Projects from 'components/Projects/Projects'
 import ProjectsPersonal from 'components/Highlights'
 import LinkButton from 'components/LinkButton'
 import profilePhoto from 'assets/images/photo-50.jpg'
