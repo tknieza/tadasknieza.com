@@ -2,6 +2,7 @@ import React from 'react'
 import LinkButton from 'components/LinkButton'
 import { MdEmail } from 'react-icons/md'
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
+import { LT, GB } from 'country-flag-icons/react/3x2'
 
 function About() {
   return (
@@ -15,8 +16,11 @@ function About() {
         practical industry knowledge of building and contributing to software
         projects. My venture in software started in school, where I learned to
         code video games and participate in competitive coding competitions
-        around Lithuania 🇱🇹. These experiences eventually led me to pursue
-        studies in computer science at Newcastle University 🇬🇧.
+        around Lithuania{' '}
+        {<LT title="Lithuania" className="w-5 h-5 inline-block" />}. These
+        experiences eventually led me to pursue studies in computer science at
+        Newcastle University{' '}
+        {<GB title="Great Britain" className="w-5 h-5 inline-block" />}.
       </p>
       <p className="font-blackbird tracking-wide text-justify pb-2">
         Nowadays, I am focused on developing web solutions using the latest web
