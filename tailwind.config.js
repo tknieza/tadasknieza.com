@@ -23,7 +23,7 @@ module.exports = {
         brcyan: '#93a1a1'
       },
       backgroundImage: {
-        'tknieza-background': "url('/src/bg.svg')"
+        'tknieza-background': "url('/src/assets/images/bg.svg')"
       },
       fontFamily: {
         blackbird: ['Project Blackbird']

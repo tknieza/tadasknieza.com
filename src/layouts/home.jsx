@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Projects from 'components/Projects/Projects'
+import Projects from 'components/Projects'
 import ProjectsPersonal from 'components/Highlights'
 import LinkButton from 'components/LinkButton'
 import profilePhoto from 'assets/images/photo-50.jpg'
@@ -61,25 +61,30 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
-        <ProjectsPersonal />
-
-        {/* Rough structure of remaining components for homepage */}
         <div>
-          <h1 className="text-2xl font-bold pt-8 pb-4">
-            Bio
+          <h2 className="text-2xl font-bold pt-8 pb-4">
+            Highlights
             <span className="font-extrabold pl-1">_</span>
-          </h1>
-          <div>
-            <p>
-              <span className="pr-2 font-bold">1999</span>Born in Klaipėda,
-              Lithuania
+          </h2>
+          <ProjectsPersonal />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold pt-8 pb-4">
+            Hobbies
+            <span className="font-extrabold pl-1">_</span>
+          </h2>
+          <div className="mx-6 ">
+            <p className="font-blackbird tracking-wide">
+              Music, Game Dev, Playing Guitar, Cycling, Mechanical Keyboards, 3D
+              Modelling
             </p>
           </div>
         </div>
-        <h1 className="py-12">Other things I do</h1>
-
         <div>
-          <h2>Open-Source Projects</h2>
+          <h2 className="text-2xl font-bold pt-8 pb-4">
+            Projects
+            <span className="font-extrabold pl-1">_</span>
+          </h2>
           <Projects />
         </div>
       </div>

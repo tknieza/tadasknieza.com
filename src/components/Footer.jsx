@@ -1,6 +1,6 @@
 import React from 'react'
-import netlifyImage from 'netlify.png'
-import reactImage from 'react.png'
+import netlifyImage from 'assets/images/netlify.png'
+import reactImage from 'assets/images/react.png'
 
 const Footer = () => {
   return (

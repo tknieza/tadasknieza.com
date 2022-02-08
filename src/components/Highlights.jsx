@@ -2,8 +2,8 @@ import React from 'react'
 
 import LinkButton from 'components/LinkButton'
 
-import flica from 'flica.svg'
-import selectNote from 'select-note.svg'
+import flica from 'assets/images/flica.svg'
+import selectNote from 'assets/images/select-note.svg'
 import { BsGithub } from 'react-icons/bs'
 import { MdWebAsset } from 'react-icons/md'
 
@@ -28,10 +28,6 @@ const ProjectsPersonal = () => {
   ]
   return (
     <div>
-      <h1 className="text-2xl font-bold pt-8 pb-4">
-        Highlights
-        <span className="font-extrabold pl-1">_</span>
-      </h1>
       <div className="md:flex">
         {highlights.map(item => (
           <div
