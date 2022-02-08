@@ -1,36 +1,35 @@
 {
   "name": "tadasknieza.com",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Tad's website",
+  "keywords": [],
+  "author": "Tadas Knieza<tadasknieza@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "darkmode-js": "^1.5.7",
+    "@headlessui/react": "^1.4.3",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "country-flag-icons": "^1.4.20",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-github-btn": "^1.2.1",
+    "react-icons": "^4.3.1",
     "react-icons-kit": "^2.0.0",
-    "react-pose": "^4.0.10",
     "react-router-dom": "^6.0.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.0",
     "react-tooltip": "^4.2.21",
     "react-transition-group": "^4.4.2",
-    "react-waypoint": "^10.1.0",
-    "web-vitals": "^1.1.2",
-    "typography": "^0.16.21",
-    "typography-inject-fonts": "0.0.0",
-    "typography-theme-github": "^0.16.19",
-    "immer": ">=9.0.6",
-    "set-value": ">=4.0.1"
+    "three": "^0.137.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
