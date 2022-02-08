@@ -9,11 +9,7 @@ import Navigation from 'components/Navigation'
 import VoxelArt from 'components/VoxelArt'
 
 const App = () => {
-  const [darkMode, toggleDarkMode] = useState(
-    localStorage.theme === 'dark' ||
-      (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-  )
+  const [darkMode, toggleDarkMode] = useState(true)
 
   const toggleColorMode = () => {
     toggleDarkMode(!darkMode)
@@ -28,12 +24,9 @@ const App = () => {
 
   useEffect(() => {
     if (localStorage.theme === undefined) {
-      document.documentElement.classList.add(
-        window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : ''
-      )
+      // Default to dark mode
+      document.documentElement.classList.add('dark')
+      toggleDarkMode(true)
     } else {
       if (localStorage.theme === 'dark') {
         document.documentElement.classList.add('dark')
