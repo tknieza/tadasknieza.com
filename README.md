@@ -1,8 +1,8 @@
 # tadasknieza.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3351cba0-7fcf-4e3f-8415-11dc4e3c04b1/deploy-status)](https://app.netlify.com/sites/wonderful-khorana-53a009/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3351cba0-7fcf-4e3f-8415-11dc4e3c04b1/deploy-status)](https://app.netlify.com/sites/tknieza/deploys)
 
-Tadas' personal website running on React and Node.js. Deployed using Netlify.
+My personal website running on React and Node.js. Deployed using Netlify.
 
 # Note
 
