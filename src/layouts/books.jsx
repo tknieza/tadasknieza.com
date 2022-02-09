@@ -51,7 +51,7 @@ const books = [
 function Books() {
   return (
     <div>
-      <div className="py-8">
+      <div className="py-8 mb-12">
         <div className="py-2 px-8 items-center justify-center dark:bg-white bg-brblack text-white dark:text-brblack transition-colors text-center text-base rounded-lg w-fit m-auto">
           <p className="font-semibold">
             “An investment in knowledge always pays the best interest.”
@@ -61,7 +61,7 @@ function Books() {
           </p>
         </div>
       </div>
-      <div>
+      <div className="mb-12">
         <h1 className="text-2xl font-bold pt-8 pb-3">
           Book Recommendations
           <span className="font-extrabold pl-1">_</span>
