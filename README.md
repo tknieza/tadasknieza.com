@@ -1,6 +1,8 @@
 # tadasknieza.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3351cba0-7fcf-4e3f-8415-11dc4e3c04b1/deploy-status)](https://app.netlify.com/sites/tknieza/deploys)
+Status: Deprecated as of January 1, 2026
+
+This project is no longer actively maintained or supported.
 
 My personal website running on React and Node.js. Deployed using Netlify.
 
